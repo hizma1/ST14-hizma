@@ -1,0 +1,13 @@
+- type: tile
+  id: STFloorSteel
+  parent: BaseStationTile
+  name: tiles-st-floor-steel
+  sprite: /Textures/_ST14/Tiles/rodger_young/default.png
+  itemDrop: FloorTileItemSteel
+
+- type: tile
+  id: STPlateSteel
+  parent: BaseStationTile
+  name: tiles-st-plate-steel
+  sprite: /Textures/_ST14/Tiles/rodger_young/plate.png
+  itemDrop: FloorTileItemSteel
