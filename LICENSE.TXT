@@ -1,170 +1,88 @@
 ===============================================================================
-STARSHIP TROOPERS SS14 LICENSE
-Copyright (c) 2026 [Denlero]
+STARBORNE TROOPERS LICENSE
 ===============================================================================
 
-===============================================================================
-PART 1: CODE LICENSE (AGPL-3.0)
-===============================================================================
+This repository contains material under several licenses. Which license
+applies to a file is determined by its location, as described below.
 
-All source code written specifically for Starship Troopers SS14 
-(including game mechanics, systems, and server logic) is distributed under 
-the GNU Affero General Public License v3.0 (AGPL-3.0).
+-------------------------------------------------------------------------------
+1. Starborne Troopers original code and content
+-------------------------------------------------------------------------------
 
-This license requires that any modified version of the code, when used to 
-provide service over a network, must also be made available in source code 
-form to all users.
+Copyright (c) 2026 Denlero and Starborne Troopers contributors.
+All rights reserved.
 
-Full text: https://www.gnu.org/licenses/agpl-3.0.html
+Applies to all files located in any directory named "_ST14" and its
+subdirectories, including:
+  - Content.Server/_ST14/
+  - Content.Shared/_ST14/
+  - Content.Client/_ST14/
+  - Resources/**/_ST14/
 
-===============================================================================
-PART 2: ASSETS LICENSE (CC BY-NC-ND 4.0)
-===============================================================================
+These files are made publicly available for viewing and reference only.
+No permission is granted to use, copy, modify, merge, publish, distribute,
+sublicense or sell them, in whole or in part, or to run them on any server,
+without prior written permission from the copyright holder.
 
-All visual and audio assets, including but not limited to:
-- Sprites and textures
-- Music and sound effects
-- Logos and icons
-- UI elements
-- Artwork and concept art
+This does not limit any rights granted by the terms of service of the
+platform hosting this repository (for example, viewing and forking the
+repository on GitHub).
 
-are distributed under the Creative Commons 
-Attribution-NonCommercial-NoDerivatives 4.0 International License 
-(CC BY-NC-ND 4.0).
+Permission requests: @denlero
 
-This means:
+-------------------------------------------------------------------------------
+2. Space Wizards Federation code
+-------------------------------------------------------------------------------
 
-YOU ARE FREE TO:
-- Share — copy and redistribute the material in any medium or format
-- Provided you give appropriate credit to the original author
+Code originating from space-wizards/space-station-14 remains licensed under
+the MIT License. The full license text and copyright notice are provided in
+LICENSE-MIT.TXT.
 
-YOU ARE NOT PERMITTED TO:
-- Use the material for commercial purposes (including donations, 
-  subscriptions, paid access, in-game purchases, or any form of monetization)
-- Remix, transform, or build upon the material
-- Distribute modified versions of the material
-- Use the material on any public server without explicit written permission
+Changes made by Starborne Troopers contributors to files outside "_ST14"
+directories are also licensed under the MIT License.
 
-Full legal code: https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode
+-------------------------------------------------------------------------------
+3. Assets
+-------------------------------------------------------------------------------
 
-===============================================================================
-PART 3: COMMERCIAL LICENSING
-===============================================================================
+Original Starborne Troopers assets (sprites, sounds and other media) in
+"_ST14" directories are licensed under the Creative Commons
+Attribution-NonCommercial-NoDerivatives 4.0 International License
+(CC BY-NC-ND 4.0): https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode
+The author of each asset is credited in the meta.json or attributions.yml
+file next to it.
 
-For commercial use of assets (including running a public server with 
-monetization), please contact:
-[@denlero]
+Assets derived from other works (for example, from Space Station 14 assets
+under CC-BY-SA 3.0) keep the license required by the original work, as
+specified in their meta.json or attributions.yml file.
 
-Commercial licenses are available on a case-by-case basis.
+All other assets are licensed as specified in the meta.json or
+attributions.yml file next to each asset.
 
-===============================================================================
-PART 4: TRADEMARK DISCLAIMER
-===============================================================================
+-------------------------------------------------------------------------------
+4. Contributions
+-------------------------------------------------------------------------------
 
-"Starship Troopers" is a registered trademark of Sony Pictures Entertainment 
-Inc. and its respective rights holders. This project is a FAN WORK and is 
-NOT affiliated with, endorsed by, or sponsored by Sony Pictures or any other 
-official rights holders. This is a non-commercial community project created 
-for entertainment purposes only. All rights to the "Starship Troopers" 
-franchise belong to their respective owners.
+Code. Code contributions to "_ST14" directories are distributed under
+section 1. The contributor grants Denlero a perpetual, worldwide,
+non-exclusive, royalty-free license to use, modify, sublicense and relicense
+them.
 
-===============================================================================
-PART 5: ORIGINAL SS14 LICENSE (MIT) - INHERITED CODE
-===============================================================================
+Assets. Asset contributions remain the property of their authors and are
+published under CC BY-NC-ND 4.0 (section 3). In addition to that license,
+the author grants Denlero and the Starborne Troopers project a perpetual,
+worldwide, non-exclusive, royalty-free right to use and modify the asset
+within the project (for example, to recolor, resize or animate it),
+including in a commercially operated game and its promotional materials.
+This grant does not include the right to sell the asset separately from
+the project or to relicense it to third parties without the author's
+separate consent.
 
-Code inherited from Space Station 14 remains under the MIT License as 
-required by the original copyright holders:
+-------------------------------------------------------------------------------
+5. Disclaimer of warranty
+-------------------------------------------------------------------------------
 
-===============================================================================
-STARSHIP TROOPERS SS14 ЛИЦЕНЗИЯ
-Copyright (c) 2026 [Denlero]
-===============================================================================
-
-===============================================================================
-ЧАСТЬ 1: ЛИЦЕНЗИЯ НА КОД (AGPL-3.0)
-===============================================================================
-
-Весь исходный код, написанный специально для Starship Troopers SS14 
-(игровые механики, системы, серверная логика), распространяется под 
-лицензией GNU Affero General Public License v3.0 (AGPL-3.0).
-
-Полный текст: https://www.gnu.org/licenses/agpl-3.0.html
-
-===============================================================================
-ЧАСТЬ 2: ЛИЦЕНЗИЯ НА АССЕТЫ (CC BY-NC-ND 4.0)
-===============================================================================
-
-Все визуальные и аудиоресурсы, включая:
-- Спрайты и текстуры
-- Музыку и звуковые эффекты
-- Логотипы и иконки
-- Элементы интерфейса
-- Арт и концепт-арты
-
-распространяются под лицензией Creative Commons 
-Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0).
-
-Это означает:
-
-РАЗРЕШЕНО:
-- Делиться — копировать и распространять материал в любом формате
-- При условии указания авторства
-
-ЗАПРЕЩЕНО:
-- Использовать материал в коммерческих целях (включая донаты, подписки, 
-  платный доступ, внутриигровые покупки или любую форму монетизации)
-- Изменять, перерабатывать или создавать производные работы
-- Распространять измененные версии материала
-- Использовать материал на любых публичных серверах без письменного 
-  разрешения правообладателя
-
-Полный текст: https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode
-
-===============================================================================
-ЧАСТЬ 3: КОММЕРЧЕСКОЕ ЛИЦЕНЗИРОВАНИЕ
-===============================================================================
-
-Для коммерческого использования ассетов (включая запуск публичного сервера 
-с монетизацией) обращайтесь:
-[@denlero]
-
-Коммерческие лицензии предоставляются индивидуально.
-
-===============================================================================
-ЧАСТЬ 4: ОТКАЗ ОТ ПРАВ НА ТОВАРНЫЙ ЗНАК
-===============================================================================
-
-"Starship Troopers" является зарегистрированным товарным знаком Sony Pictures 
-Entertainment Inc. и соответствующих правообладателей. Данный проект является 
-ЛЮБИТЕЛЬСКОЙ РАБОТОЙ и НЕ связан с Sony Pictures или другими официальными 
-правообладателями, не одобрен и не спонсируется ими. Все права на франшизу 
-"Starship Troopers" принадлежат соответствующим правообладателям.
-
-===============================================================================
-ЧАСТЬ 5: ОРИГИНАЛЬНАЯ ЛИЦЕНЗИЯ SS14 (MIT) - УНАСЛЕДОВАННЫЙ КОД
-===============================================================================
-
-Код, унаследованный от Space Station 14, остается под лицензией MIT 
-в соответствии с требованиями оригинальных правообладателей:
-
-MIT License
-
-Copyright (c) 2017-2026 Space Wizards Federation
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+All files in this repository are provided "AS IS", without warranty of any
+kind, express or implied. In no event shall the authors or copyright holders
+be liable for any claim, damages or other liability arising from the use of
+these files.

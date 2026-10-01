@@ -1,0 +1,15 @@
+- type: ST14ExtractionBalance
+  id: Default
+  minModifier: -0.5
+  maxModifier: 0.5
+  campaignThresholds:
+  - upTo: 0.2
+    modifier: 0.10
+  - upTo: 0.3
+    modifier: 0.05
+  - upTo: 0.7
+    modifier: 0
+  - upTo: 0.8
+    modifier: -0.05
+  - upTo: 1.01
+    modifier: -0.10

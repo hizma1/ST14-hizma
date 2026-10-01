@@ -1,0 +1,115 @@
+- type: entity
+  abstract: true
+  id: ST14BaseResourceExtractor
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Transform
+    anchored: true
+  - type: Clickable
+  - type: InteractionOutline
+  - type: ActivatableUI
+    key: enum.ST14ResourceExtractorUIKey.Key
+  - type: UserInterface
+    interfaces:
+      enum.ST14ResourceExtractorUIKey.Key:
+        type: ST14ResourceExtractorBoundUserInterface
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.45,-0.45,0.45,0.45"
+        density: 200
+        mask:
+        - MachineMask
+        layer:
+        - MachineLayer
+  - type: Sprite
+    noRot: true
+    layers:
+    - state: idle
+      map: [ "base" ]
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.ST14ResourceExtractorVisuals.Extracting:
+        base:
+          False: { state: idle }
+          True: { state: working }
+  - type: ItemSlots
+  - type: ContainerContainer
+    containers:
+      capsule_slot_1: !type:ContainerSlot
+      capsule_slot_2: !type:ContainerSlot
+  - type: Damageable
+    damageModifierSet: SteelMod
+  - type: Injurable
+    damageContainer: StructuralInorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 300
+      behaviors:
+      - !type:EmptyAllContainersBehaviour
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: ST14ResourceExtractor
+    extractionRate: 16.67
+    hitInterval: 1
+    shakeRadius: 4
+    shakeStrength: 0.06
+    soundRadius: 6
+    hitSound:
+      path: /Audio/Items/drill_hit.ogg
+    capsuleSlot1:
+      name: st14-extractor-capsule-slot-1
+      whitelist:
+        components:
+        - ST14ResourceCapsule
+    capsuleSlot2:
+      name: st14-extractor-capsule-slot-2
+      whitelist:
+        components:
+        - ST14ResourceCapsule
+
+- type: entity
+  parent: ST14BaseResourceExtractor
+  id: ST14ArmiumDrill
+  name: armium drill
+  description: Drills armium from a field into an inserted capsule.
+  components:
+  - type: Sprite
+    sprite: _ST14/Structures/ST14Resources/armium_drill.rsi
+  - type: ST14ResourceExtractor
+    resourceType: Armium
+
+- type: entity
+  parent: ST14BaseResourceExtractor
+  id: ST14AuronDrill
+  name: auron drill
+  description: Drills auron from a field into an inserted capsule.
+  components:
+  - type: Sprite
+    sprite: _ST14/Structures/ST14Resources/auron_drill.rsi
+  - type: ST14ResourceExtractor
+    resourceType: Auron
+
+- type: entity
+  parent: ST14BaseResourceExtractor
+  id: ST14NeftPumpJack
+  name: pump jack
+  description: Pumps oil from a field into an inserted capsule.
+  components:
+  - type: Sprite
+    sprite: _ST14/Structures/ST14Resources/neft_pumpjack.rsi
+  - type: ST14ResourceExtractor
+    resourceType: Neft
+    hitSound:
+      path: /Audio/Machines/machine_switch.ogg

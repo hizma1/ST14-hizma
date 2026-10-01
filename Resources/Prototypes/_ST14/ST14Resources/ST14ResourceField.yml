@@ -1,0 +1,47 @@
+- type: entity
+  abstract: true
+  id: ST14BaseResourceField
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Transform
+    anchored: true
+  - type: Sprite
+    drawdepth: FloorObjects
+    layers:
+    - state: puddle
+
+- type: entity
+  parent: ST14BaseResourceField
+  id: ST14NeftField
+  name: oil field
+  description: Dark oil seeping up from underground. A pump jack can be built here.
+  components:
+  - type: Sprite
+    sprite: _ST14/Structures/ST14Resources/neft_field.rsi
+  - type: ST14ResourceField
+    resourceType: Neft
+
+- type: entity
+  parent: ST14BaseResourceField
+  id: ST14ArmiumField
+  name: armium field
+  description: A pool of blue liquid metal. An armium drill can be built here.
+  components:
+  - type: Sprite
+    sprite: _ST14/Structures/ST14Resources/armium_field.rsi
+  - type: ST14ResourceField
+    resourceType: Armium
+
+- type: entity
+  parent: ST14BaseResourceField
+  id: ST14AuronField
+  name: auron field
+  description: Yellow gas seeping from the ground. An auron drill can be built here.
+  components:
+  - type: Sprite
+    sprite: _ST14/Structures/ST14Resources/auron_field.rsi
+    layers:
+    - state: gas
+  - type: ST14ResourceField
+    resourceType: Auron

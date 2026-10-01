@@ -1,0 +1,14 @@
+- type: ST14Resource
+  id: Neft
+  name: st14-resource-neft-name
+  color: "#2B2118"
+
+- type: ST14Resource
+  id: Armium
+  name: st14-resource-armium-name
+  color: "#2E6FD8"
+
+- type: ST14Resource
+  id: Auron
+  name: st14-resource-auron-name
+  color: "#E3C930"

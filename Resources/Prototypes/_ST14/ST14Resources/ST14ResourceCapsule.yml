@@ -1,0 +1,47 @@
+- type: entity
+  parent: BaseItem
+  id: ST14ResourceCapsule
+  name: resource capsule
+  description: A sealed capsule for carrying extracted resources.
+  components:
+  - type: Sprite
+    sprite: _ST14/Objects/Specific/ST14Resources/capsule.rsi
+    layers:
+    - state: base
+    - state: fill-1
+      map: [ "fill" ]
+      visible: false
+  - type: Item
+    size: Normal
+  - type: Appearance
+  - type: ST14ResourceCapsule
+    capacity: 2000
+  - type: ST14ResourceCapsuleVisuals
+    maxFillLevels: 4
+
+- type: entity
+  parent: ST14ResourceCapsule
+  id: ST14ResourceCapsuleArmiumFilled
+  suffix: Armium, Filled
+  components:
+  - type: ST14ResourceCapsule
+    resourceType: Armium
+    amount: 2000
+
+- type: entity
+  parent: ST14ResourceCapsule
+  id: ST14ResourceCapsuleAuronFilled
+  suffix: Auron, Filled
+  components:
+  - type: ST14ResourceCapsule
+    resourceType: Auron
+    amount: 2000
+
+- type: entity
+  parent: ST14ResourceCapsule
+  id: ST14ResourceCapsuleNeftFilled
+  suffix: Neft, Filled
+  components:
+  - type: ST14ResourceCapsule
+    resourceType: Neft
+    amount: 2000
