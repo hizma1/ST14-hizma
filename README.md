@@ -42,7 +42,7 @@ This repository contains material under several licenses. In short:
 |---|---|---|
 | Starborne Troopers code | `_ST14` directories | All rights reserved, viewing only |
 | Space Station 14 code and our changes to it | everything outside `_ST14` | MIT (see `LICENSE-MIT.TXT`) |
-| Original Starborne Troopers assets | `_ST14` directories | CC BY-NC-ND 4.0, authors keep their rights |
+| Original Starborne Troopers assets | `_ST14` directories | All rights reserved, viewing only, authors keep their rights |
 | Other assets | next to each asset | as specified in `meta.json` / `attributions.yml` |
 
 The full terms, including the rules for contributions, are in [LICENSE.TXT](LICENSE.TXT). If this summary and LICENSE.TXT differ, LICENSE.TXT applies.
@@ -90,7 +90,7 @@ Thanks for contributing to Starborne Troopers!
 
 - Put new Starborne Troopers code and assets in `_ST14` directories.
 - Follow the Space Station 14 codebase conventions (https://docs.spacestation14.com/en/general-development/codebase-info/codebase-organization.html) and PR guidelines (https://docs.spacestation14.com/en/general-development/codebase-info/pull-request-guidelines.html).
-- For every new asset, fill in `meta.json` / `attributions.yml` with the author and license. Original assets use `CC-BY-NC-ND-4.0`; assets based on other works keep the license of the original.
+- For every new asset, fill in `meta.json` / `attributions.yml` with the author and license. Original assets are "All rights reserved"; assets based on other works keep the license of the original.
 - By submitting a contribution, you agree to the contribution terms in section 4 of [LICENSE.TXT](LICENSE.TXT).
 
 ### AI-generated contributions

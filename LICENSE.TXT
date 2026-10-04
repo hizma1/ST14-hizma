@@ -45,12 +45,16 @@ directories are also licensed under the MIT License.
 3. Assets
 -------------------------------------------------------------------------------
 
-Original Starborne Troopers assets (sprites, sounds and other media) in
-"_ST14" directories are licensed under the Creative Commons
-Attribution-NonCommercial-NoDerivatives 4.0 International License
-(CC BY-NC-ND 4.0): https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode
-The author of each asset is credited in the meta.json or attributions.yml
-file next to it.
+Original Starborne Troopers assets (sprites, sounds, music, images and other
+media) in "_ST14" directories are the property of their respective authors.
+All rights reserved.
+
+These assets are made publicly available for viewing only. No permission is
+granted to use, copy, modify, adapt, publish, distribute, sublicense or sell
+them, in whole or in part, or to include them in any other project, game,
+server or work, without prior written permission from the author of the
+asset. The author of each asset is credited in the meta.json or
+attributions.yml file next to it.
 
 Assets derived from other works (for example, from Space Station 14 assets
 under CC-BY-SA 3.0) keep the license required by the original work, as
@@ -69,14 +73,13 @@ non-exclusive, royalty-free license to use, modify, sublicense and relicense
 them.
 
 Assets. Asset contributions remain the property of their authors and are
-published under CC BY-NC-ND 4.0 (section 3). In addition to that license,
-the author grants Denlero and the Starborne Troopers project a perpetual,
-worldwide, non-exclusive, royalty-free right to use and modify the asset
-within the project (for example, to recolor, resize or animate it),
-including in a commercially operated game and its promotional materials.
-This grant does not include the right to sell the asset separately from
-the project or to relicense it to third parties without the author's
-separate consent.
+published under section 3 (all rights reserved). The author grants Denlero
+and the Starborne Troopers project a perpetual, worldwide, non-exclusive,
+royalty-free right to use and modify the asset within the project (for
+example, to recolor, resize or animate it), including in a commercially
+operated game and its promotional materials. This grant does not include
+the right to sell the asset separately from the project or to license it
+to third parties without the author's separate consent.
 
 -------------------------------------------------------------------------------
 5. Disclaimer of warranty
