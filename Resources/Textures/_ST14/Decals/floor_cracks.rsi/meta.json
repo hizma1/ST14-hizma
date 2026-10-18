@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "license": "All-Rights-Reserved",
+  "copyright": "https://discord.gg/DZWBexCPFX",
+  "size": {
+    "x": 143,
+    "y": 77
+  },
+  "states": [
+    {
+      "name": "cracks1"
+    },
+    {
+      "name": "cracks2"
+    },
+    {
+      "name": "cracks3"
+    }
+  ]
+}

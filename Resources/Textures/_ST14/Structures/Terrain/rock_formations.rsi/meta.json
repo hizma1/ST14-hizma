@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "license": "All-Rights-Reserved",
+  "copyright": "https://discord.gg/DZWBexCPFX",
+  "size": {
+    "x": 135,
+    "y": 82
+  },
+  "states": [
+    {
+      "name": "rockFormation1"
+    },
+    {
+      "name": "rockFormation2_top-l"
+    },
+    {
+      "name": "rockFormation2_top-r"
+    },
+    {
+      "name": "rockFormation3_top-l"
+    },
+    {
+      "name": "rockFormation3_top-r"
+    },
+    {
+      "name": "rockFormation4"
+    },
+    {
+      "name": "shortRocks"
+    }
+  ]
+}

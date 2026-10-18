@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "license": "All-Rights-Reserved",
+  "copyright": "https://discord.gg/DZWBexCPFX",
+  "size": {
+    "x": 102,
+    "y": 45
+  },
+  "states": [
+    {
+      "name": "dunes1"
+    },
+    {
+      "name": "dunes10"
+    },
+    {
+      "name": "dunes2"
+    },
+    {
+      "name": "dunes3"
+    },
+    {
+      "name": "dunes4"
+    },
+    {
+      "name": "dunes5"
+    },
+    {
+      "name": "dunes6"
+    },
+    {
+      "name": "dunes7"
+    },
+    {
+      "name": "dunes8"
+    },
+    {
+      "name": "dunes9"
+    }
+  ]
+}

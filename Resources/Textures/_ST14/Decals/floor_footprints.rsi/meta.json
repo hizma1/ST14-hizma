@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "license": "All-Rights-Reserved",
+  "copyright": "https://discord.gg/DZWBexCPFX",
+  "size": {
+    "x": 127,
+    "y": 81
+  },
+  "states": [
+    {
+      "name": "footprints1"
+    },
+    {
+      "name": "footprints2"
+    },
+    {
+      "name": "footprints3"
+    },
+    {
+      "name": "footprints4"
+    },
+    {
+      "name": "footprints5"
+    },
+    {
+      "name": "footprints6"
+    },
+    {
+      "name": "footprints7"
+    },
+    {
+      "name": "footprints8"
+    }
+  ]
+}

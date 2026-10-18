@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "license": "All-Rights-Reserved",
+  "copyright": "Made by PatoGrone",
+  "size": {
+    "x": 48,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "icon"
+    },
+    {
+      "name": "base"
+    },
+    {
+      "name": "mag-0"
+    },
+    {
+      "name": "bolt-open"
+    },
+    {
+      "name": "pump"
+    }
+  ]
+}

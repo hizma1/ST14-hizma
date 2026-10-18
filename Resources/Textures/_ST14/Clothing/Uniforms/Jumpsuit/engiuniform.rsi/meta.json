@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "license": "All-Rights-Reserved",
+  "copyright": "Made by PatoGrone",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "icon"
+    },
+    {
+      "name": "equipped-INNERCLOTHING",
+      "directions": 4
+    },
+    {
+      "name": "jacketless-equipped-INNERCLOTHING",
+      "directions": 4
+    },
+    {
+      "name": "sleeves-equipped-INNERCLOTHING",
+      "directions": 4
+    },
+    {
+      "name": "inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "inhand-right",
+      "directions": 4
+    }
+  ]
+}
