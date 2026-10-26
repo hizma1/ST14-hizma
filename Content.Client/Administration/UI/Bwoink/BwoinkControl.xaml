@@ -10,20 +10,24 @@
                     <BoxContainer Access="Public" Name="BwoinkArea" VerticalExpand="True" />
                 </BoxContainer>
             </SplitContainer>
-            <BoxContainer Orientation="Horizontal" SetHeight="30" >
-                <CheckBox Name="AdminOnly" Access="Public" Text="{Loc 'admin-ahelp-admin-only'}" ToolTip="{Loc 'admin-ahelp-admin-only-tooltip'}" />
-                <Control HorizontalExpand="True" MinWidth="5" />
-                <CheckBox Name="PlaySound" Access="Public" Text="{Loc 'admin-bwoink-play-sound'}" Pressed="True" />
-                <Control HorizontalExpand="True" MinWidth="5" />
-                <Button Visible="True" Name="PopOut" Access="Public" Text="{Loc 'admin-logs-pop-out'}" StyleClasses="OpenBoth" HorizontalAlignment="Left" />
-                <Control HorizontalExpand="True" />
-                <Button Visible="False" Name="PlayerLogs" Text="{Loc 'admin-player-actions-logs'}" StyleClasses="OpenRight" />
-                <Button Visible="False" Access="Public" Name="Notes" Text="{Loc 'admin-player-actions-notes'}" StyleClasses="OpenBoth" />
-                <controls:ConfirmButton Visible="False" Name="Kick" Text="{Loc 'admin-player-actions-kick'}" ConfirmationText="{Loc 'admin-player-actions-confirm'}" StyleClasses="OpenBoth" />
-                <Button Visible="False" Name="Ban" Text="{Loc 'admin-player-actions-ban'}" StyleClasses="OpenBoth" />
-                <controls:ConfirmButton Visible="False" Name="Respawn" Text="{Loc 'admin-player-actions-respawn'}" ConfirmationText="{Loc 'admin-player-actions-confirm'}" StyleClasses="OpenBoth" />
-                <Button Visible="False" Name="Follow" Text="{Loc 'admin-player-actions-follow'}" StyleClasses="OpenLeft" />
+            <!-- ST14-start: two rows so the options and the admin actions never run into each other -->
+            <BoxContainer Orientation="Vertical" SeparationOverride="4" Margin="0 4 0 0">
+                <BoxContainer Orientation="Horizontal" SeparationOverride="12">
+                    <CheckBox Name="AdminOnly" Access="Public" Text="{Loc 'admin-ahelp-admin-only'}" ToolTip="{Loc 'admin-ahelp-admin-only-tooltip'}" />
+                    <CheckBox Name="PlaySound" Access="Public" Text="{Loc 'admin-bwoink-play-sound'}" Pressed="True" />
+                    <Control HorizontalExpand="True" />
+                    <Button Visible="True" Name="PopOut" Access="Public" Text="{Loc 'admin-logs-pop-out'}" />
+                </BoxContainer>
+                <BoxContainer Orientation="Horizontal" SeparationOverride="4">
+                    <Button Visible="False" Name="PlayerLogs" Text="{Loc 'admin-player-actions-logs'}" HorizontalExpand="True" ClipText="True" />
+                    <Button Visible="False" Access="Public" Name="Notes" Text="{Loc 'admin-player-actions-notes'}" HorizontalExpand="True" ClipText="True" />
+                    <controls:ConfirmButton Visible="False" Name="Kick" Text="{Loc 'admin-player-actions-kick'}" ConfirmationText="{Loc 'admin-player-actions-confirm'}" HorizontalExpand="True" ClipText="True" />
+                    <Button Visible="False" Name="Ban" Text="{Loc 'admin-player-actions-ban'}" HorizontalExpand="True" ClipText="True" />
+                    <controls:ConfirmButton Visible="False" Name="Respawn" Text="{Loc 'admin-player-actions-respawn'}" ConfirmationText="{Loc 'admin-player-actions-confirm'}" HorizontalExpand="True" ClipText="True" />
+                    <Button Visible="False" Name="Follow" Text="{Loc 'admin-player-actions-follow'}" HorizontalExpand="True" ClipText="True" />
+                </BoxContainer>
             </BoxContainer>
+            <!-- ST14-end -->
         </SplitContainer>
     </PanelContainer>
 </Control>

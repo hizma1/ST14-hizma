@@ -1,4 +1,5 @@
 using System.Numerics;
+using Content.Client._ST14.MainHub; // ST14
 using Content.Client.Administration.Managers;
 using Content.Client.Gameplay;
 using Content.Client.Lobby;
@@ -136,6 +137,11 @@ public sealed partial class ClientGameTicker : GameTicker
     [SubscribeNetworkEvent]
     private void JoinLobby(TickerJoinLobbyEvent message)
     {
+        // ST14-start
+        if (_userInterfaceManager.GetUIController<ST14HubUIController>().TryEnterHub())
+            return;
+        // ST14-end
+
         _stateManager.RequestStateChange<LobbyState>();
     }
 
@@ -184,6 +190,9 @@ public sealed partial class ClientGameTicker : GameTicker
     {
         // Force an update in the event of this song being the same as the last.
         RestartSound = message.RestartSound;
+
+        if (_stateManager.CurrentState is ST14HubState) // ST14
+            return;
 
         _userInterfaceManager.GetUIController<RoundEndSummaryUIController>().OpenRoundEndSummaryWindow(message);
     }

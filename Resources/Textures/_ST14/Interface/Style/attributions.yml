@@ -1,0 +1,21 @@
+- files:
+  - "button.svg.96dpi.png"
+  - "button_small.svg.96dpi.png"
+  - "rounded_button.svg.96dpi.png"
+  - "rounded_button_bordered.svg.96dpi.png"
+  license: "Custom"
+  copyright: "Made from Starship Troopers: Terran Command art, © The Artistocrats / Slitherine / Sony Pictures. Used with permission."
+  source: "https://store.steampowered.com/app/1202130/"
+
+- files:
+  - "black_panel_dark_thin_border.png"
+  - "lineedit.png"
+  - "tabcontainer_panel.png"
+  - "tooltip.png"
+  - "transparent_window_background_bordered.png"
+  - "window_background.png"
+  - "window_background_bordered.png"
+  - "window_header.png"
+  license: "CC-BY-SA-3.0"
+  copyright: "Flat frames in the ST14 hub palette, made for Starborne Troopers"
+  source: "https://github.com/Starborne-Troopers-SS14/Starborne-Troopers-SS14"

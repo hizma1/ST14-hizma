@@ -83,6 +83,17 @@ public abstract partial class SharedGhostSystem : EntitySystem
     /// <summary>
     /// Sets whether or not the ghost player is allowed to return to their original body.
     /// </summary>
+    // ST14-start: ghost colour of supporters
+    public void SetColor(Entity<GhostComponent?> entity, Color color)
+    {
+        if (!Resolve(entity, ref entity.Comp) || entity.Comp.Color == color)
+            return;
+
+        entity.Comp.Color = color;
+        Dirty(entity);
+    }
+    // ST14-end
+
     public void SetCanReturnToBody(Entity<GhostComponent?> entity, bool value)
     {
         if (!Resolve(entity, ref entity.Comp))

@@ -1,6 +1,7 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Runtime.InteropServices;
+using Content.Server._ST14.Supporter; // ST14
 using Content.Server.Administration.Logs;
 using Content.Server.Administration.Managers;
 using Content.Server.Administration.Systems;
@@ -306,6 +307,14 @@ private ISawmill? _sawmill = default!;
         {
             wrappedMessage = Loc.GetString("chat-manager-send-ooc-patron-wrap-message", ("patronColor", patronColor),("playerName", player.Name), ("message", FormattedMessage.EscapeText(message)));
         }
+
+        // ST14-start: supporters colour their name in OOC with the colour they picked on the support screen
+        if (_entityManager.System<ST14SupporterSystem>().GetOocColor(player.UserId) is { } supporterColor)
+        {
+            wrappedMessage = Loc.GetString("chat-manager-send-ooc-patron-wrap-message", ("patronColor", supporterColor.ToHex()),
+                ("playerName", player.Name), ("message", FormattedMessage.EscapeText(message)));
+        }
+        // ST14-end
 
         //TODO: player.Name color, this will need to change the structure of the MsgChatMessage
         ChatMessageToAll(ChatChannel.OOC, message, wrappedMessage, EntityUid.Invalid, hideChat: false, recordReplay: true, colorOverride: colorOverride, author: player.UserId);

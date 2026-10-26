@@ -96,24 +96,26 @@ namespace Content.Client.UserInterface.Controls
 
         protected override void Draw(DrawingHandleScreen handle)
         {
-            UIBox2 centerBox = PixelSizeBox;
-
+            // ST14-start: work in plain floats, with a fractional UI scale the edges could cross and UIBox2 throws
             var padSize = HasMargins ? PadSize : 0;
+            var top = 0f;
+            var bottom = (float) PixelHeight;
 
             if (HasTopEdge)
             {
-                centerBox += (0, (padSize + EdgeSize) * UIScale, 0, 0);
-                handle.DrawRect(new UIBox2(0, padSize * UIScale, PixelWidth, centerBox.Top), EdgeColor);
+                top = MathF.Min((padSize + EdgeSize) * UIScale, bottom);
+                handle.DrawRect(new UIBox2(0, MathF.Min(padSize * UIScale, top), PixelWidth, top), EdgeColor);
             }
 
             if (HasBottomEdge)
             {
-                centerBox += (0, 0, 0, -((padSize + EdgeSize) * UIScale));
-                handle.DrawRect(new UIBox2(0, centerBox.Bottom, PixelWidth, PixelHeight - padSize * UIScale),
-                    EdgeColor);
+                var edgeBottom = MathF.Max(top, PixelHeight - padSize * UIScale);
+                bottom = MathF.Max(top, PixelHeight - (padSize + EdgeSize) * UIScale);
+                handle.DrawRect(new UIBox2(0, bottom, PixelWidth, MathF.Max(bottom, edgeBottom)), EdgeColor);
             }
 
-            GetActualStyleBox()?.Draw(handle, centerBox, UIScale);
+            GetActualStyleBox()?.Draw(handle, new UIBox2(0, top, PixelWidth, bottom), UIScale);
+            // ST14-end
         }
 
         private StyleBox? GetActualStyleBox()

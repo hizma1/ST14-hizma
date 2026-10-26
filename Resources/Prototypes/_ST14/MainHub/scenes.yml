@@ -1,0 +1,1694 @@
+# Main hub backgrounds. Layout and keyframes are taken from Starship Troopers: Terran Command.
+# Coordinates use a 1920x1080 canvas with y pointing down, curves are cubic segments: time, a, b, c, d
+# value = ((a * dt + b) * dt + c) * dt + d, where dt is the time since the segment start.
+
+- type: st14HubScene
+  id: ST14HubOrbit
+  pivot: 0, 1
+  duration: 5.0167
+  layers:
+  - id: background
+    texture: /Textures/_ST14/Interface/Hub/Wallpapers/bg.png
+    anchorMin: 0, 0
+    anchorMax: 1, 1
+    position: 0, 0
+    size: 0, 0
+    pivot: 0.5, 0.5
+  - id: sun
+    texture: /Textures/_ST14/Interface/Hub/Wallpapers/sun.png
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: -758.5, -338
+    size: 595, 569
+    pivot: 0.5, 0.5
+  - id: planet
+    texture: /Textures/_ST14/Interface/Hub/Wallpapers/planet.png
+    anchorMin: 1, 0
+    anchorMax: 1, 0
+    position: -626, 381.5
+    size: 762.5, 763
+    pivot: 0.5, 0.5
+  - id: ship_front
+    texture: /Textures/_ST14/Interface/Hub/Wallpapers/ship.png
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: -295.795, -127.5
+    size: 953.5, 379.5
+    pivot: 0.5, 0.5
+    curves:
+    - property: PosY
+      keys: [0, 0, 0, 4.9229, -127.809, 5, 0, 0, 0, -103.1945]
+    - property: PosX
+      keys: [0, 0, 0, 8.0445, -283.7235, 5, 0, 0, 0, -243.501]
+    - property: SizeX
+      keys: [0, 0, 0, 6.6739, 951.9465, 5, 0, 0, 0, 985.316]
+    - property: SizeY
+      keys: [0, 0, 0, 2.6563, 378.8815, 5, 0, 0, 0, 392.163]
+  - id: ship_back
+    texture: /Textures/_ST14/Interface/Hub/Wallpapers/ship.png
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: -601.9368, -312.259
+    size: 341.218, 135.807
+    pivot: 0.5, 0.5
+    curves:
+    - property: PosX
+      keys: [0, 0, 0, 2.11, -601.55, 5, 0, 0, 0, -591]
+    - property: SizeX
+      keys: [0, 0, 0, 0.7685, 341.995, 5, 0, 0, 0, 345.8375]
+    - property: PosY
+      keys: [0, 0, 0, 1.9099, -312.1045, 5, 0, 0, 0, -302.5547]
+    - property: SizeY
+      keys: [0, 0, 0, 0.3057, 136.116, 5, 0, 0, 0, 137.6445]
+  - id: asteroids
+    rect: false
+    position: 1037.29, -424.25
+    scale: 12.0755, 12.0755
+  - id: asteroid_5
+    parent: asteroids
+    texture: /Textures/_ST14/Interface/Hub/Wallpapers/asteroid_5.png
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: -24.95, 24.4
+    size: 119, 136.5
+    pivot: 0.5, 0.5
+    scale: 0.0828, 0.0828
+  - id: asteroid_7
+    parent: asteroids
+    texture: /Textures/_ST14/Interface/Hub/Wallpapers/asteroid_7.png
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: -18.7, 28.2
+    size: 219.5, 193
+    pivot: 0.5, 0.5
+    scale: 0.0828, 0.0828
+  - id: asteroid_8
+    parent: asteroids
+    texture: /Textures/_ST14/Interface/Hub/Wallpapers/asteroid_8.png
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: -9.15, 32.55
+    size: 201, 192.5
+    pivot: 0.5, 0.5
+    scale: 0.0828, 0.0828
+  - id: asteroid_11
+    parent: asteroids
+    texture: /Textures/_ST14/Interface/Hub/Wallpapers/asteroid_11.png
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: -45.35, 29.05
+    size: 145.5, 174.5
+    pivot: 0.5, 0.5
+    scale: 0.0828, 0.0828
+  - id: asteroid_10
+    parent: asteroids
+    texture: /Textures/_ST14/Interface/Hub/Wallpapers/asteroid_10.png
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: 14.55, 37.55
+    size: 180, 239.5
+    pivot: 0.5, 0.5
+    scale: 0.0828, 0.0828
+  - id: asteroid_21
+    parent: asteroids
+    texture: /Textures/_ST14/Interface/Hub/Wallpapers/asteroid_21.png
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: -38.05, 16.85
+    size: 181, 145.5
+    pivot: 0.5, 0.5
+    scale: 0.0828, 0.0828
+  - id: asteroids_27
+    parent: asteroids
+    texture: /Textures/_ST14/Interface/Hub/Wallpapers/asteroid_27.png
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: -46, 36.8
+    size: 73.5, 67
+    pivot: 0.5, 0.5
+    scale: 0.0828, 0.0828
+  - id: asteroid_6
+    parent: asteroids
+    texture: /Textures/_ST14/Interface/Hub/Wallpapers/asteroid_6.png
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: -65.4, 8
+    size: 225, 220
+    pivot: 0.5, 0.5
+    scale: 0.0828, 0.0828
+  - id: asteroid_7_2
+    parent: asteroids
+    texture: /Textures/_ST14/Interface/Hub/Wallpapers/asteroid_24.png
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: -80.7, 21.35
+    size: 308, 245.5
+    pivot: 0.5, 0.5
+    scale: 0.0828, 0.0828
+  - id: asteroid_8_2
+    parent: asteroids
+    texture: /Textures/_ST14/Interface/Hub/Wallpapers/asteroid_8.png
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: -81.6, -5.15
+    size: 201, 192.5
+    pivot: 0.5, 0.5
+    scale: 0.0828, 0.0828
+  - id: asteroid_10_2
+    parent: asteroids
+    texture: /Textures/_ST14/Interface/Hub/Wallpapers/asteroid_20.png
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: -61.7, 32.45
+    size: 50.5, 50
+    pivot: 0.5, 0.5
+    scale: 0.0828, 0.0828
+  - id: asteroid_11_2
+    parent: asteroids
+    texture: /Textures/_ST14/Interface/Hub/Wallpapers/asteroid_27.png
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: -79.3, 29.05
+    size: 73.5, 67
+    pivot: 0.5, 0.5
+    scale: 0.0828, 0.0828
+  - id: asteroid_22
+    parent: asteroids
+    texture: /Textures/_ST14/Interface/Hub/Wallpapers/asteroid_22.png
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: -57.1, 15.05
+    size: 135.5, 141.5
+    pivot: 0.5, 0.5
+    scale: 0.0828, 0.0828
+  - id: asteroid_13
+    parent: asteroids
+    texture: /Textures/_ST14/Interface/Hub/Wallpapers/asteroid_19.png
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: -12.95, 12.05
+    size: 31.5, 30.5
+    pivot: 0.5, 0.5
+    scale: 0.0828, 0.0828
+  - id: asteroid_14
+    parent: asteroids
+    texture: /Textures/_ST14/Interface/Hub/Wallpapers/asteroid_2.png
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: 34.2, 23.8
+    size: 139.5, 156.5
+    pivot: 0.5, 0.5
+    scale: 0.0828, 0.0828
+  - id: asteroid_21_2
+    parent: asteroids
+    texture: /Textures/_ST14/Interface/Hub/Wallpapers/asteroid_6.png
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: 65.3, 20.05
+    size: 225, 220
+    pivot: 0.5, 0.5
+    scale: 0.0828, 0.0828
+  - id: asteroid_19
+    parent: asteroids
+    texture: /Textures/_ST14/Interface/Hub/Wallpapers/asteroid_25.png
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: 43.75, 26.55
+    size: 82.5, 93.5
+    pivot: 0.5, 0.5
+    scale: 0.0828, 0.0828
+  - id: asteroid_18
+    parent: asteroids
+    texture: /Textures/_ST14/Interface/Hub/Wallpapers/asteroid_1.png
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: 43.2, 37.2
+    size: 168.5, 187.5
+    pivot: 0.5, 0.5
+    scale: 0.0828, 0.0828
+  - id: asteroid_16
+    parent: asteroids
+    texture: /Textures/_ST14/Interface/Hub/Wallpapers/asteroid_3.png
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: 56.1, 34.75
+    size: 161.5, 283
+    pivot: 0.5, 0.5
+    scale: 0.0828, 0.0828
+  - id: asteroid_17
+    parent: asteroids
+    texture: /Textures/_ST14/Interface/Hub/Wallpapers/asteroid_4.png
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: 21.45, 27.95
+    size: 99, 98
+    pivot: 0.5, 0.5
+    scale: 0.0828, 0.0828
+  - id: asteroid_20
+    parent: asteroids
+    texture: /Textures/_ST14/Interface/Hub/Wallpapers/asteroid_25.png
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: -49.3, 24.85
+    size: 82.5, 93.5
+    pivot: 0.5, 0.5
+    scale: 0.0828, 0.0828
+  - id: asteroid_30
+    parent: asteroids
+    texture: /Textures/_ST14/Interface/Hub/Wallpapers/asteroid_19.png
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: -47.2, 9.25
+    size: 31.5, 30.5
+    pivot: 0.5, 0.5
+    scale: 0.0828, 0.0828
+  - id: asteroid_29
+    parent: asteroids
+    texture: /Textures/_ST14/Interface/Hub/Wallpapers/asteroid_30.png
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: 8.65, 19.75
+    size: 48, 40
+    pivot: 0.5, 0.5
+    scale: 0.0828, 0.0828
+
+- type: st14HubScene
+  id: ST14HubRidge
+  pivot: 0, 1
+  duration: 5.0167
+  layers:
+  - id: background
+    texture: /Textures/_ST14/Interface/Hub/Wallpapers/background.png
+    anchorMin: 0, 0
+    anchorMax: 1, 1
+    position: 0, 0
+    size: 0, 0
+    pivot: 0.5, 0.5
+  - id: cloud_1
+    texture: /Textures/_ST14/Interface/Hub/Wallpapers/cloud1.png
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: -674, -402
+    size: 987, 35.5
+    pivot: 0.5, 0.5
+    curves:
+    - property: PosX
+      keys: [0, 0, 0, 12.4, -666.5, 5, 0, 0, 0, -604.5]
+  - id: cloud_2
+    texture: /Textures/_ST14/Interface/Hub/Wallpapers/cloud2.png
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: 446.7499, -361.5
+    size: 843.5, 83
+    pivot: 0.5, 0.5
+    curves:
+    - property: PosX
+      keys: [0, 0, 0, 19.3, 431.5, 5, 0, 0, 0, 528]
+    - property: PosY
+      keys: [0, 0, 0, 0, -359.5]
+  - id: cloud_3
+    texture: /Textures/_ST14/Interface/Hub/Wallpapers/cloud3.png
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: -171.5, -425.795
+    size: 1054.6584, 83.0945
+    pivot: 0.5, 0.5
+    curves:
+    - property: PosX
+      keys: [0, 0, 0, 38.9, -159.5, 5, 0, 0, 0, 35]
+    - property: PosY
+      keys: [0, 0, 0, 0, -425.795]
+  - id: mountain_left
+    texture: /Textures/_ST14/Interface/Hub/Wallpapers/mountain_left.png
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: -408, 80
+    size: 1184, 706.5
+    pivot: 0.5, 0.5
+    curves:
+    - property: PosX
+      keys: [0, 0, 0, -5.0917, -427.1163, 5, 0, 0, 0, -452.575]
+    - property: PosY
+      keys: [0, 0, 0, -4.9017, 128.5035, 5, 0, 0, 0, 103.995]
+    - property: SizeX
+      keys: [0, 0, 0, 16.4265, 1143.7675, 5, 0, 0, 0, 1225.9]
+    - property: SizeY
+      keys: [0, 0, 0, 9.8014, 682.493, 5, 0, 0, 0, 731.5]
+  - id: fog_left
+    texture: /Textures/_ST14/Interface/Hub/Wallpapers/fog_leftt.png
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: -511.5, 208
+    size: 1111.5, 450.5
+    pivot: 0.5, 0.5
+    curves:
+    - property: PosX
+      keys: [0, 0, 0, 1.2, -503, 5, 0, 0, 0, -497]
+    - property: PosY
+      keys: [0, 0, 0, -42.422, 314.75, 5, 0, 0, 0, 102.64]
+  - id: mountain_right
+    texture: /Textures/_ST14/Interface/Hub/Wallpapers/mountain_right.png
+    anchorMin: 1, 0
+    anchorMax: 1, 0
+    position: -960, 512
+    size: 1920, 922.5
+    pivot: 0.5, 0.5
+    curves:
+    - property: PosX
+      keys: [0, 0, 0, 9.85, -932.25, 5, 0, 0, 0, -883]
+    - property: PosY
+      keys: [0, 0, 0, -9.87, 558.1, 5, 0, 0, 0, 508.75]
+    - property: SizeX
+      keys: [0, 0, 0, 9.845, 1975.542, 5, 0, 0, 0, 2024.767]
+    - property: SizeY
+      keys: [0, 0, 0, 4.73, 949.2, 5, 0, 0, 0, 972.85]
+  - id: tanker_body
+    texture: /Textures/_ST14/Interface/Hub/Wallpapers/tanker_body.png
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: 519.9999, 42.5
+    size: 2010, 781.5
+    pivot: 0.5, 0.5
+    curves:
+    - property: Rotation
+      keys: [0, 0, 0, -0.9118, 10.192, 5, 0, 0, 0, 5.633]
+    - property: PosX
+      keys: [0, 0, 0, -7.1, 154.5, 5, 0, 0, 0, 119]
+    - property: PosY
+      keys: [0, 0, 0, -6.645, -19.855, 5, 0, 0, 0, -53.08]
+    - property: PivotX
+      keys: [0, 0, 0, 0, 0.3153]
+    - property: PivotY
+      keys: [0, 0, 0, 0, 0.2657]
+  - id: tanker_arm_l
+    texture: /Textures/_ST14/Interface/Hub/Wallpapers/tanker_arm_l.png
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: 45.2557, 82.9372
+    size: 106.5, 127.5
+    pivot: 0.8216, 0.0838
+    rotation: -345.1676
+    curves:
+    - property: Rotation
+      keys: [0, 0, 0, 6.2475, -31.2324, 5, 0, 0, 0, 0.005]
+    - property: PosY
+      keys: [0, 0, 0, -1.4, 178.5, 5, 0, 0, 0, 171.5]
+    - property: PosX
+      keys: [0, 0, 0, 2.4, 6, 5, 0, 0, 0, 18]
+  - id: tanker_arm_r
+    texture: /Textures/_ST14/Interface/Hub/Wallpapers/tanker_arm_r.png
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: 156.2228, 81.1416
+    size: 77.5, 118.5
+    pivot: 0.6288, 0.0628
+    rotation: -354.6714
+    curves:
+    - property: Rotation
+      keys: [0, 0, 0, -7.2149, -8.3956, 5, 0, 0, 0, -44.4701]
+    - property: PosY
+      keys: [0, 0, 0, -6.282, 197.4098, 5, 0, 0, 0, 166]
+    - property: PosX
+      keys: [0, 0, 0, -2.8049, 138.0245, 5, 0, 0, 0, 124]
+    - property: PivotX
+      keys: [0, 0, 0, 0, 0.7091]
+    - property: PivotY
+      keys: [0, 0, 0, 0, 0.0784]
+  - id: tanker_head
+    texture: /Textures/_ST14/Interface/Hub/Wallpapers/tanker_head.png
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: 123.4999, -71.75
+    size: 375, 392.5
+    pivot: 0.5, 0.5
+    curves:
+    - property: Rotation
+      keys: [0, 0, 0, -2.3946, 11.342, 5, 0, 0, 0, -0.631]
+    - property: PosY
+      keys: [0, 0, 0, -10.7454, -3.7731, 5, 0, 0, 0, -57.5]
+    - property: PosX
+      keys: [0, 0, 0, -7.0676, 197.838, 5, 0, 0, 0, 162.5]
+    - property: PivotX
+      keys: [0, 0, 0, 0, 0.6982]
+    - property: PivotY
+      keys: [0, 0, 0, 0, 0.3159]
+  - id: fog_right
+    texture: /Textures/_ST14/Interface/Hub/Wallpapers/fog_right.png
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: 405.4999, 27.5
+    size: 1305.5, 1033.5
+    pivot: 0.5, 0.5
+    curves:
+    - property: PosY
+      keys: [0, 0, 0, -16, 80, 5, 0, 0, 0, 0]
+    - property: PosX
+      keys: [0, 0, 0, -0.6, 405.4999, 5, 0, 0, 0, 402.5]
+  - id: foreground
+    texture: /Textures/_ST14/Interface/Hub/Wallpapers/foreground.png
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: 0.0001, 136
+    size: 1920, 808
+    pivot: 0.5, 0.5
+    curves:
+    - property: PosY
+      keys: [0, 0, 0, -0.15, 130.75, 5, 0, 0, 0, 130]
+    - property: PosX
+      keys: [0, 0, 0, 1.6803, 14.5, 5, 0, 0, 0, 22.9015]
+    - property: SizeX
+      keys: [0, 0, 0, 33.0649, 1997.8275, 5, 0, 0, 0, 2163.1521]
+    - property: SizeY
+      keys: [0, 0, 0, 13.5932, 821.15, 5, 0, 0, 0, 889.116]
+
+- type: st14HubScene
+  id: ST14HubFleet
+  pivot: 0, 1
+  duration: 5.0167
+  layers:
+  - id: background
+    texture: /Textures/_ST14/Interface/Hub/Wallpapers/bg_2.png
+    anchorMin: 0, 0
+    anchorMax: 1, 1
+    position: 0, 0
+    size: 0, 0
+    pivot: 0.5, 0.5
+  - id: nebula_mist
+    texture: /Textures/_ST14/Interface/Hub/Wallpapers/nebula_mist.png
+    color: "#00FFEB5A"
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: 71.9999, -212
+    size: 1457, 360
+    pivot: 0.5, 0.5
+    curves:
+    - property: PosY
+      keys: [0, 0, 0, -0.1, -211.5, 5, 0, 0, 0, -212]
+    - property: PosX
+      keys: [0, 0, 0, 14.7075, 43.9625, 5, 0, 0, 0, 117.5]
+  - id: nebula_mist_1
+    texture: /Textures/_ST14/Interface/Hub/Wallpapers/nebula_mist.png
+    color: "#00B7FF5A"
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: -103.5001, -113.5
+    size: 1457, 360
+    pivot: 0.5, 0.5
+    rotation: -353.4573
+  - id: ship_small
+    texture: /Textures/_ST14/Interface/Hub/Wallpapers/ship_small.png
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: -607.5, -350.5
+    size: 178.5, 129.5
+    pivot: 0.5, 0.5
+    curves:
+    - property: PosX
+      keys: [0, 0, 0, -0.8713, -600.1436, 5, 0, 0, 0, -604.5]
+    - property: PosY
+      keys: [0, 0, 0, -0.7046, -346.9769, 5, 0, 0, 0, -350.5]
+    - property: SizeX
+      keys: [0, 0, 0, 0.7744, 168.7875, 5, 0, 0, 0, 172.6595]
+    - property: SizeY
+      keys: [0, 0, 0, 0.5618, 122.454, 5, 0, 0, 0, 125.263]
+  - id: ship_medium
+    texture: /Textures/_ST14/Interface/Hub/Wallpapers/ship_medium.png
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: -436.9194, -70.6982
+    size: 409.8385, 296.397
+    pivot: 0.5, 0.5
+    curves:
+    - property: PosX
+      keys: [0, 0, 0, -3.2144, -425.428, 5, 0, 0, 0, -441.5]
+    - property: PosY
+      keys: [0, 0, 0, -1.3613, -60.6935, 5, 0, 0, 0, -67.5]
+    - property: SizeX
+      keys: [0, 0, 0, 1.686, 400.695, 5, 0, 0, 0, 409.125]
+    - property: SizeY
+      keys: [0, 0, 0, 1.2193, 289.7845, 5, 0, 0, 0, 295.881]
+  - id: ship_big
+    texture: /Textures/_ST14/Interface/Hub/Wallpapers/ship_big.png
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: 255.4995, -98.5
+    size: 971.5, 702
+    pivot: 0.5, 0.5
+    curves:
+    - property: PosX
+      keys: [0, 0, 0, -5.596, 332.48, 5, 0, 0, 0, 304.5]
+    - property: PosY
+      keys: [0, 0, 0, -2.1, 0, 5, 0, 0, 0, -10.5]
+    - property: SizeX
+      keys: [0, 0, 0, 0.1761, 936.039, 5, 0, 0, 0, 936.9195]
+    - property: SizeY
+      keys: [0, 0, 0, -0.0234, 677.1335, 5, 0, 0, 0, 677.0165]
+  - id: asteroids
+    rect: false
+    position: 1037.29, -424.25
+    scale: 12.0755, 12.0755
+  - id: asteroid_5
+    parent: asteroids
+    texture: /Textures/_ST14/Interface/Hub/Wallpapers/asteroid_5.png
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: -24.95, 24.4
+    size: 119, 136.5
+    pivot: 0.5, 0.5
+    scale: 0.0828, 0.0828
+    curves:
+    - property: Rotation
+      keys: [0, 0, 0, 2.5178, 6.406, 5, 0, 0, 0, 18.995]
+    - property: PosY
+      keys: [0, 0, 0, -0.23, 24, 5, 0, 0, 0, 22.85]
+    - property: PosX
+      keys: [0, 0, 0, -0.23, -25.35, 5, 0, 0, 0, -26.5]
+  - id: asteroid_7
+    parent: asteroids
+    texture: /Textures/_ST14/Interface/Hub/Wallpapers/asteroid_7.png
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: -18.7, 28.2
+    size: 219.5, 193
+    pivot: 0.5, 0.5
+    scale: 0.0828, 0.0828
+    curves:
+    - property: Rotation
+      keys: [0.05, -0.2673, 1.9846, 0, 0.849, 5, 0, 0, 0, 17.058]
+    - property: PosY
+      keys: [0.05, 0.0181, -0.1347, 0, 28.4, 5, 0, 0, 0, 27.3]
+    - property: PosX
+      keys: [0.05, -0.0148, 0.1102, 0, -19.15, 5, 0, 0, 0, -18.25]
+  - id: asteroid_8
+    parent: asteroids
+    texture: /Textures/_ST14/Interface/Hub/Wallpapers/asteroid_8.png
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: -9.15, 32.55
+    size: 201, 192.5
+    pivot: 0.5, 0.5
+    scale: 0.0828, 0.0828
+    curves:
+    - property: Rotation
+      keys: [0, 0, 0, 1.3328, -2.102, 5, 0, 0, 0, 4.562]
+    - property: PosX
+      keys: [0, 0, 0, 0.27, -9.6, 5, 0, 0, 0, -8.25]
+    - property: PosY
+      keys: [0, 0, 0, -0.13, 33.2, 5, 0, 0, 0, 32.55]
+  - id: asteroid_11
+    parent: asteroids
+    texture: /Textures/_ST14/Interface/Hub/Wallpapers/asteroid_11.png
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: -45.35, 29.05
+    size: 145.5, 174.5
+    pivot: 0.5, 0.5
+    scale: 0.0828, 0.0828
+    curves:
+    - property: Rotation
+      keys: [0, 0, 0, 3.5712, -9.606, 5, 0, 0, 0, 8.25]
+    - property: PosY
+      keys: [0, 0, 0, 0.29, 35.85, 5, 0, 0, 0, 37.3]
+    - property: PosX
+      keys: [0, 0, 0, 0.19, -46.3, 5, 0, 0, 0, -45.35]
+  - id: asteroid_10
+    parent: asteroids
+    texture: /Textures/_ST14/Interface/Hub/Wallpapers/asteroid_10.png
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: 14.55, 37.55
+    size: 180, 239.5
+    pivot: 0.5, 0.5
+    scale: 0.0828, 0.0828
+    curves:
+    - property: Rotation
+      keys: [0, 0, 0, 1.1138, -12.592, 5, 0, 0, 0, -7.023]
+    - property: PosX
+      keys: [0, 0, 0, 0.07, 14.4, 5, 0, 0, 0, 14.75]
+    - property: PosY
+      keys: [0, 0, 0, -0.11, 37.9, 5, 0, 0, 0, 37.35]
+  - id: asteroid_21
+    parent: asteroids
+    texture: /Textures/_ST14/Interface/Hub/Wallpapers/asteroid_21.png
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: -38.05, 16.85
+    size: 181, 145.5
+    pivot: 0.5, 0.5
+    scale: 0.0828, 0.0828
+    curves:
+    - property: Rotation
+      keys: [0, 0, 0, -2.986, -1.636, 5, 0, 0, 0, -16.566]
+    - property: PosY
+      keys: [0, 0, 0, -0.37, 17.15, 5, 0, 0, 0, 15.3]
+    - property: PosX
+      keys: [0, 0, 0, 0.02, -38.35, 5, 0, 0, 0, -38.25]
+  - id: asteroids_27
+    parent: asteroids
+    texture: /Textures/_ST14/Interface/Hub/Wallpapers/asteroid_27.png
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: -46, 36.8
+    size: 73.5, 67
+    pivot: 0.5, 0.5
+    scale: 0.0828, 0.0828
+  - id: asteroid_6
+    parent: asteroids
+    texture: /Textures/_ST14/Interface/Hub/Wallpapers/asteroid_6.png
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: -65.4, 8
+    size: 225, 220
+    pivot: 0.5, 0.5
+    scale: 0.0828, 0.0828
+    curves:
+    - property: Rotation
+      keys: [0, 0, 0, 2.3458, 2.007, 5, 0, 0, 0, 13.736]
+    - property: PosX
+      keys: [0, 0, 0, 0.22, -65.25, 5, 0, 0, 0, -64.15]
+    - property: PosY
+      keys: [0, 0, 0, 0.33, 8.85, 5, 0, 0, 0, 10.5]
+  - id: asteroid_7_2
+    parent: asteroids
+    texture: /Textures/_ST14/Interface/Hub/Wallpapers/asteroid_24.png
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: -80.7, 21.35
+    size: 308, 245.5
+    pivot: 0.5, 0.5
+    scale: 0.0828, 0.0828
+    curves:
+    - property: Rotation
+      keys: [0, 0, 0, 2.8982, -2.073, 5, 0, 0, 0, 12.418]
+    - property: PosX
+      keys: [0, 0, 0, -0.53, -79.9, 5, 0, 0, 0, -82.55]
+    - property: PosY
+      keys: [0, 0, 0, 0, 20.8]
+  - id: asteroid_8_2
+    parent: asteroids
+    texture: /Textures/_ST14/Interface/Hub/Wallpapers/asteroid_8.png
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: -81.6, -5.15
+    size: 201, 192.5
+    pivot: 0.5, 0.5
+    scale: 0.0828, 0.0828
+    curves:
+    - property: Rotation
+      keys: [0, 0, 0, 3.3436, 4.754, 5, 0, 0, 0, 21.472]
+    - property: PosY
+      keys: [0, 0, 0, 0.44, -4.3, 5, 0, 0, 0, -2.1]
+    - property: PosX
+      keys: [0, 0, 0, -0.7, -81.75, 5, 0, 0, 0, -85.25]
+  - id: asteroid_10_2
+    parent: asteroids
+    texture: /Textures/_ST14/Interface/Hub/Wallpapers/asteroid_20.png
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: -61.7, 32.45
+    size: 50.5, 50
+    pivot: 0.5, 0.5
+    scale: 0.0828, 0.0828
+    curves:
+    - property: Rotation
+      keys: [0, 0, 0, -2.661, 2.912, 5, 0, 0, 0, -10.393]
+    - property: PosY
+      keys: [0, 0, 0, 0.4, 30.9, 5, 0, 0, 0, 32.9]
+    - property: PosX
+      keys: [0, 0, 0, -0.45, -60.15, 5, 0, 0, 0, -62.4]
+  - id: asteroid_11_2
+    parent: asteroids
+    texture: /Textures/_ST14/Interface/Hub/Wallpapers/asteroid_27.png
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: -79.3, 29.05
+    size: 73.5, 67
+    pivot: 0.5, 0.5
+    scale: 0.0828, 0.0828
+    curves:
+    - property: Rotation
+      keys: [0, 0, 0, 8.271, 6.295, 5, 0, 0, 0, 47.65]
+    - property: PosY
+      keys: [0, 0, 0, -0.25, 25.45, 5, 0, 0, 0, 24.2]
+    - property: PosX
+      keys: [0, 0, 0, -0.1, -49.2, 5, 0, 0, 0, -49.7]
+  - id: asteroid_22
+    parent: asteroids
+    texture: /Textures/_ST14/Interface/Hub/Wallpapers/asteroid_22.png
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: -57.1, 15.05
+    size: 135.5, 141.5
+    pivot: 0.5, 0.5
+    scale: 0.0828, 0.0828
+    curves:
+    - property: Rotation
+      keys: [0, 0, 0, -3.3876, 6.687, 5, 0, 0, 0, -10.251]
+    - property: PosY
+      keys: [0, 0, 0, -0.02, 15.3, 5, 0, 0, 0, 15.2]
+    - property: PosX
+      keys: [0, 0, 0, -0.24, -57, 5, 0, 0, 0, -58.2]
+  - id: asteroid_13
+    parent: asteroids
+    texture: /Textures/_ST14/Interface/Hub/Wallpapers/asteroid_19.png
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: -12.95, 12.05
+    size: 31.5, 30.5
+    pivot: 0.5, 0.5
+    scale: 0.0828, 0.0828
+    curves:
+    - property: Rotation
+      keys: [0, 0, 0, 2.0452, -1.015, 5, 0, 0, 0, 9.211]
+    - property: PosY
+      keys: [0, 0, 0, 0.02, 12.05, 5, 0, 0, 0, 12.15]
+    - property: PosX
+      keys: [0, 0, 0, -0.06, -12.75, 5, 0, 0, 0, -13.05]
+  - id: asteroid_14
+    parent: asteroids
+    texture: /Textures/_ST14/Interface/Hub/Wallpapers/asteroid_2.png
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: 34.2, 23.8
+    size: 139.5, 156.5
+    pivot: 0.5, 0.5
+    scale: 0.0828, 0.0828
+    curves:
+    - property: Rotation
+      keys: [0, 0, 0, 2.6828, -18.448, 5, 0, 0, 0, -5.034]
+    - property: PosY
+      keys: [0, 0, 0, -0.43, 26.2, 5, 0, 0, 0, 24.05]
+    - property: PosX
+      keys: [0, 0, 0, 0.2, 33.05, 5, 0, 0, 0, 34.05]
+  - id: asteroid_21_2
+    parent: asteroids
+    texture: /Textures/_ST14/Interface/Hub/Wallpapers/asteroid_6.png
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: 65.3, 20.05
+    size: 225, 220
+    pivot: 0.5, 0.5
+    scale: 0.0828, 0.0828
+    curves:
+    - property: Rotation
+      keys: [0, 0, 0, 1.4092, 1.719, 5, 0, 0, 0, 8.765]
+    - property: PosY
+      keys: [0, 0, 0, -0.13, 23.55, 5, 0, 0, 0, 22.9]
+    - property: PosX
+      keys: [0, 0, 0, 0.17, 63.45, 5, 0, 0, 0, 64.3]
+  - id: asteroid_19
+    parent: asteroids
+    texture: /Textures/_ST14/Interface/Hub/Wallpapers/asteroid_25.png
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: 43.75, 26.55
+    size: 82.5, 93.5
+    pivot: 0.5, 0.5
+    scale: 0.0828, 0.0828
+    curves:
+    - property: Rotation
+      keys: [0, 0, 0, -7.4172, -10.128, 5, 0, 0, 0, -47.214]
+    - property: PosX
+      keys: [0, 0, 0, -0.35, 46.75, 5, 0, 0, 0, 45]
+    - property: PosY
+      keys: [0, 0, 0, -0.39, 29.85, 5, 0, 0, 0, 27.9]
+  - id: asteroid_18
+    parent: asteroids
+    texture: /Textures/_ST14/Interface/Hub/Wallpapers/asteroid_1.png
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: 43.2, 37.2
+    size: 168.5, 187.5
+    pivot: 0.5, 0.5
+    scale: 0.0828, 0.0828
+    curves:
+    - property: Rotation
+      keys: [0, 0, 0, -3.0192, -3.649, 5, 0, 0, 0, -18.745]
+    - property: PosX
+      keys: [0, 0, 0, -0.24, 45.4, 5, 0, 0, 0, 44.2]
+    - property: PosY
+      keys: [0, 0, 0, 0.27, 36.7, 5, 0, 0, 0, 38.05]
+  - id: asteroid_16
+    parent: asteroids
+    texture: /Textures/_ST14/Interface/Hub/Wallpapers/asteroid_3.png
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: 56.1, 34.75
+    size: 161.5, 283
+    pivot: 0.5, 0.5
+    scale: 0.0828, 0.0828
+    curves:
+    - property: Rotation
+      keys: [0, 0, 0, 1.4654, 1.045, 5, 0, 0, 0, 8.372]
+    - property: PosX
+      keys: [0, 0, 0, 0.1, 56.25, 5, 0, 0, 0, 56.75]
+    - property: PosY
+      keys: [0, 0, 0, 0.26, 35.1, 5, 0, 0, 0, 36.4]
+  - id: asteroid_17
+    parent: asteroids
+    texture: /Textures/_ST14/Interface/Hub/Wallpapers/asteroid_4.png
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: 21.45, 27.95
+    size: 99, 98
+    pivot: 0.5, 0.5
+    scale: 0.0828, 0.0828
+    curves:
+    - property: Rotation
+      keys: [0, 0, 0, -3.4998, -1.549, 5, 0, 0, 0, -19.048]
+    - property: PosX
+      keys: [0, 0, 0, 0.1, 20.6, 5, 0, 0, 0, 21.1]
+    - property: PosY
+      keys: [0, 0, 0, 0.37, 27.1, 5, 0, 0, 0, 28.95]
+  - id: asteroid_20
+    parent: asteroids
+    texture: /Textures/_ST14/Interface/Hub/Wallpapers/asteroid_25.png
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: -49.3, 24.85
+    size: 82.5, 93.5
+    pivot: 0.5, 0.5
+    scale: 0.0828, 0.0828
+    curves:
+    - property: Rotation
+      keys: [0, 0, 0, -2.5436, -4.131, 5, 0, 0, 0, -16.849]
+    - property: PosX
+      keys: [0, 0, 0, -0.16, -45.25, 5, 0, 0, 0, -46.05]
+    - property: PosY
+      keys: [0, 0, 0, 0.14, 28.95, 5, 0, 0, 0, 29.65]
+  - id: asteroid_30
+    parent: asteroids
+    texture: /Textures/_ST14/Interface/Hub/Wallpapers/asteroid_19.png
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: -47.2, 9.25
+    size: 31.5, 30.5
+    pivot: 0.5, 0.5
+    scale: 0.0828, 0.0828
+    curves:
+    - property: Rotation
+      keys: [0, 0, 0, 6.6198, -3.85, 5, 0, 0, 0, 29.249]
+    - property: PosX
+      keys: [0, 0, 0, 0.02, -47.05, 5, 0, 0, 0, -46.95]
+    - property: PosY
+      keys: [0, 0, 0, -0.18, 9.55, 5, 0, 0, 0, 8.65]
+  - id: asteroid_29
+    parent: asteroids
+    texture: /Textures/_ST14/Interface/Hub/Wallpapers/asteroid_30.png
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: 8.65, 19.75
+    size: 48, 40
+    pivot: 0.5, 0.5
+    scale: 0.0828, 0.0828
+    curves:
+    - property: Rotation
+      keys: [0, 0, 0, 4.7678, -7.496, 5, 0, 0, 0, 16.343]
+    - property: PosY
+      keys: [0, 0, 0, -0.2, 20.1, 5, 0, 0, 0, 19.1]
+    - property: PosX
+      keys: [0, 0, 0, 0, 8.5]
+  - id: atmosphere
+    texture: /Textures/_ST14/Interface/Hub/Wallpapers/atmosphere.png
+    color: "#00C5FF33"
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: 0, 199.2681
+    size: 1920, 680.864
+    pivot: 0.5, 0.5
+
+- type: st14HubScene
+  id: ST14HubMarauder
+  duration: 5.0167
+  layers:
+  - id: background
+    texture: /Textures/_ST14/Interface/Hub/Wallpapers/background_2.png
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: 2.5, 9
+    size: 1920, 1080
+    pivot: 0.5, 0.5
+    curves:
+    - property: PosX
+      keys: [0, 0, 0, -2.0808, 70.404, 5, 0, 0, 0, 60]
+    - property: PosY
+      keys: [0, 0, 0, 0, -14.518]
+    - property: SizeX
+      keys: [0, 0, 0, 0, 2105.8086]
+    - property: SizeY
+      keys: [0, 0, 0, 0, 1184.5169]
+  - id: bug_back
+    texture: /Textures/_ST14/Interface/Hub/Wallpapers/bug_back.png
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: -120.5, 63.5
+    size: 650.3915, 519.5415
+    pivot: 0.5, 0.5
+    curves:
+    - property: PosX
+      keys: [0, 0, 0, -4.546, -116.77, 5, 0, 0, 0, -139.5]
+    - property: PosY
+      keys: [0, 0, 0, -2.4495, 67.3665, 5, 0, 0, 0, 55.119]
+    - property: SizeX
+      keys: [0, 0, 0, 6.1327, 640.7, 5, 0, 0, 0, 671.3635]
+    - property: SizeY
+      keys: [0, 0, 0, 4.899, 511.808, 5, 0, 0, 0, 536.303]
+  - id: marauder_back
+    texture: /Textures/_ST14/Interface/Hub/Wallpapers/marauder_back.png
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: 501, -43
+    size: 1062.5, 780
+    pivot: 0.5, 0.5
+    curves:
+    - property: PosX
+      keys: [0, 0, 0, -6.1, 508, 5, 0, 0, 0, 477.5]
+  - id: stairs
+    texture: /Textures/_ST14/Interface/Hub/Wallpapers/stairs.png
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: 0, 372.545
+    size: 1988.0811, 352.9115
+    pivot: 0.5, 0.5
+  - id: marauder_front_weapon
+    texture: /Textures/_ST14/Interface/Hub/Wallpapers/marauder_front_gun.png
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: -406, 81
+    size: 285.5, 302
+    pivot: 0.5, 0.5
+    curves:
+    - property: Rotation
+      keys: [0, 0, 0, -3.317, 23.239, 5, 0, 0, 0, 6.654]
+    - property: PosX
+      keys: [0, 0, 0, 0, 411.25]
+    - property: PosY
+      keys: [0, 0, 0, 0, 470]
+    - property: PivotX
+      keys: [0, 0, 0, 0, 0]
+    - property: PivotY
+      keys: [0, 0, 0, 0, 0]
+  - id: marauder_front
+    texture: /Textures/_ST14/Interface/Hub/Wallpapers/marauder_front.png
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: -602.5, -1
+    size: 760, 1080
+    pivot: 0.5, 0.5
+    curves:
+    - property: PosX
+      keys: [0, 0, 0, 4.04, -633.1, 5, 0, 0, 0, -612.9]
+    - property: PosY
+      keys: [0, 0, 0, 2.9036, -14.518, 5, 0, 0, 0, 0]
+  - id: bug_stairs
+    texture: /Textures/_ST14/Interface/Hub/Wallpapers/bug_stairs.png
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: 593.5, 291
+    size: 560.4355, 611.0305
+    pivot: 0.5, 0.5
+    curves:
+    - property: PosY
+      keys: [0, 0, 0, 6.966, 259.5, 5, 0, 0, 0, 294.33]
+    - property: PosX
+      keys: [0, 0, 0, 4.51, 531.95, 5, 0, 0, 0, 554.5]
+  - id: bug_dead
+    texture: /Textures/_ST14/Interface/Hub/Wallpapers/bug_dead.png
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: -321, 175.25
+    size: 1421.5, 960.5
+    pivot: 0.5, 0.5
+    curves:
+    - property: Rotation
+      keys: [0, 0, 0, 0.971, -0.38, 5, 0, 0, 0, 4.475]
+    - property: PosY
+      keys: [0, 0, 0, -2.7889, 182.8164, 5, 0, 0, 0, 168.872]
+    - property: PosX
+      keys: [0, 0, 0, 12.4864, -324.2776, 5, 0, 0, 0, -261.8455]
+    - property: SizeY
+      keys: [0, 0, 0, 6.3277, 930.867, 5, 0, 0, 0, 962.5055]
+    - property: SizeX
+      keys: [0, 0, 0, 9.3647, 1377.645, 5, 0, 0, 0, 1424.4685]
+  - id: dust
+    texture: /Textures/_ST14/Interface/Hub/Wallpapers/dust.png
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: -416.5, 437.5
+    size: 1193.1835, 698.5
+    pivot: 0.5, 0.5
+    curves:
+    - property: PosX
+      keys: [0, 0, 0, 3.756, -324.28, 5, 0, 0, 0, -305.5]
+    - property: PosY
+      keys: [0, 0, 0, -24.1, 428, 5, 0, 0, 0, 307.5]
+  - id: dust_static
+    texture: /Textures/_ST14/Interface/Hub/Wallpapers/dust.png
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: -140.5, 484.5
+    size: 1920, 698.5
+    pivot: 0.5, 0.5
+  - id: smokeeffect_1
+    rect: false
+    position: -579, 520.5
+    rotation: -90
+    scale: 50, 50
+  - id: smokeeffect
+    rect: false
+    position: 689, 395
+    rotation: -90
+    scale: 50, 50
+
+- type: st14HubScene
+  id: ST14HubDesert
+  duration: 5.0167
+  layers:
+  - id: sky
+    texture: /Textures/_ST14/Interface/Hub/Wallpapers/sky.png
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: 56.719, -26.784
+    size: 2033.438, 1133.568
+    pivot: 0.5, 0.5
+    curves:
+    - property: PosX
+      keys: [0, 0, 0, -11.344, 56.72, 5, 0, 0, 0, 0]
+    - property: PosY
+      keys: [0, 0, 0, 0, -26.784]
+  - id: background
+    texture: /Textures/_ST14/Interface/Hub/Wallpapers/bg_3.png
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: -31.5105, -14.18
+    size: 1983.021, 1108.3595
+    pivot: 0.5, 0.5
+    curves:
+    - property: PosX
+      keys: [0, 0, 0, 6.1825, -29.2, 5, 0, 0, 0, 1.7124]
+    - property: PosY
+      keys: [0, 0, 0, 0, -14.1795]
+  - id: bug_back_antenna_left
+    texture: /Textures/_ST14/Interface/Hub/Wallpapers/bug_back_antenna_left.png
+    anchorMin: 1, 1
+    anchorMax: 1, 1
+    position: -405.5, -473.655
+    size: 105.5, 70.5
+    pivot: 0.8214, 0.5547
+    rotation: -0.0592
+    curves:
+    - property: Rotation
+      keys: [0, 0, 0, 4.1316, -17.314, 5, 0, 0, 0, 3.344]
+    - property: PosX
+      keys: [0, 0, 0, -3.527, -413.515, 5, 0, 0, 0, -431.15]
+    - property: PosY
+      keys: [0, 0, 0, -1.3307, -460.3466, 5, 0, 0, 0, -467]
+    - property: PivotX
+      keys: [0, 0, 0, 0, 0.8703]
+    - property: PivotY
+      keys: [0, 0, 0, 0, 0.6765]
+  - id: bug_back
+    texture: /Textures/_ST14/Interface/Hub/Wallpapers/bug_back_2.png
+    anchorMin: 1, 1
+    anchorMax: 1, 1
+    position: -306, -306.645
+    size: 699, 700
+    pivot: 0.522, 0.5386
+    rotation: -0.0592
+    curves:
+    - property: Rotation
+      keys: [0, 0, 0, 0.403, -0.009, 5, 0, 0, 0, 2.006]
+    - property: PosX
+      keys: [0, 0, 0, -3.75, -311, 5, 0, 0, 0, -329.75]
+    - property: PosY
+      keys: [0, 0, 0, 0, -306.645]
+  - id: bug_back_foot
+    texture: /Textures/_ST14/Interface/Hub/Wallpapers/bug_back_foot.png
+    anchorMin: 1, 1
+    anchorMax: 1, 1
+    position: -674.5, -236.7998
+    size: 352, 285
+    pivot: 0.9155, 0.1119
+    rotation: -0.0592
+    curves:
+    - property: Rotation
+      keys: [0, 0, 0, 3.3746, -15.194, 5, 0, 0, 0, 1.679]
+    - property: PosX
+      keys: [0, 0, 0, -3.9, -678, 5, 0, 0, 0, -697.5]
+    - property: PosY
+      keys: [0, 0, 0, -2.54, -236.8, 5, 0, 0, 0, -249.5]
+  - id: bug_back_antenna_right
+    texture: /Textures/_ST14/Interface/Hub/Wallpapers/bug_back_antenna_right.png
+    anchorMin: 1, 1
+    anchorMax: 1, 1
+    position: -255.5, -369
+    size: 110.5, 271.5
+    pivot: 0.1526, 0.9417
+    rotation: -0.0592
+    curves:
+    - property: Rotation
+      keys: [0, 0, 0, -3.7158, 19.026, 5, 0, 0, 0, 0.447]
+    - property: PosX
+      keys: [0, 0, 0, -4.1, -264.5, 5, 0, 0, 0, -285]
+    - property: PosY
+      keys: [0, 0, 0, 0.8, -363.5, 5, 0, 0, 0, -359.5]
+  - id: bug_front_foot
+    texture: /Textures/_ST14/Interface/Hub/Wallpapers/bug_front_foot.png
+    anchorMin: 1, 1
+    anchorMax: 1, 1
+    position: -870.8228, -300.5236
+    size: 476, 341.5
+    pivot: 0.094, 0.1153
+    rotation: -357.0604
+    curves:
+    - property: Rotation
+      keys: [0, 0, 0, 2.8054, -359.6714, 5, 0, 0, 0, -345.6445]
+    - property: PosX
+      keys: [0, 0, 0, 14.2, -954.5, 5, 0, 0, 0, -883.5]
+    - property: PosY
+      keys: [0, 0, 0, -3.6, -307, 5, 0, 0, 0, -325]
+  - id: bug_front
+    texture: /Textures/_ST14/Interface/Hub/Wallpapers/bug_front_body.png
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: -434.5001, 76.25
+    size: 1051, 927.5
+    pivot: 0.5, 0.5
+    curves:
+    - property: Rotation
+      keys: [0, 0, 0, -0.659, 0, 5, 0, 0, 0, -3.295]
+    - property: PosX
+      keys: [0, 0, 0, 9.8, -507, 5, 0, 0, 0, -458]
+  - id: bug_front_jaw
+    texture: /Textures/_ST14/Interface/Hub/Wallpapers/bug_front_jaw_bottom.png
+    anchorMin: 0, 0
+    anchorMax: 0, 0
+    position: 523.3273, 706.8723
+    size: 425, 318.5
+    pivot: 0.1165, 0.2171
+    rotation: -357.0604
+    curves:
+    - property: Rotation
+      keys: [0, 0, 0, 3.0621, -359.5055, 5, 0, 0, 0, -344.1949]
+    - property: PosX
+      keys: [0, 0, 0, 7.4, 453, 5, 0, 0, 0, 490]
+    - property: PosY
+      keys: [0, 0, 0, 0, 701.5]
+  - id: bug_front_antenna
+    texture: /Textures/_ST14/Interface/Hub/Wallpapers/antenna.png
+    anchorMin: 1, 1
+    anchorMax: 1, 1
+    position: -1467.0081, -547.4213
+    size: 166.5, 433.5
+    pivot: 0.8622, 0.9371
+    rotation: -357.0604
+    curves:
+    - property: Rotation
+      keys: [0, 0, 0, -2.6872, -0.1825, 5, 0, 0, 0, -13.6183]
+    - property: PosX
+      keys: [0, 0, 0, 8.8, -1545, 5, 0, 0, 0, -1501]
+    - property: PosY
+      keys: [0, 0, 0, 1.5843, -547.4213, 5, 0, 0, 0, -539.5]
+  - id: dust
+    texture: /Textures/_ST14/Interface/Hub/Wallpapers/dust_1.png
+    anchorMin: 1, 1
+    anchorMax: 1, 1
+    position: -255, 40.5
+    size: 1941.501, 698.5
+    pivot: 0.8622, 0.9371
+    rotation: -359.973
+    curves:
+    - property: PosY
+      keys: [0, 0, 0, -8.8, 100, 5, 0, 0, 0, 56]
+    - property: PosX
+      keys: [0, 0, 0, 0, -255]
+
+- type: st14HubScene
+  id: ST14HubInferno
+  duration: 5.0167
+  layers:
+  - id: sky
+    texture: /Textures/_ST14/Interface/Hub/Wallpapers/sky_2.png
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: 0, -26.785
+    size: 1920, 1080
+    pivot: 0.5, 0.5
+    curves:
+    - property: PosX
+      keys: [0, -1.4706, 11.0298, 0, -35.5, 5, 0, 0, 0, 56.415]
+    - property: PosY
+      keys: [0, 0, 0, 0, -26.785]
+    - property: SizeX
+      keys: [0, 0, 0, 0, 2032.8285]
+    - property: SizeY
+      keys: [0, 0, 0, 0, 1129.1181]
+  - id: ground
+    texture: /Textures/_ST14/Interface/Hub/Wallpapers/ground.png
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: -0.0001, 253.715
+    size: 1920, 519
+    pivot: 0.5, 0.5
+  - id: ship1
+    texture: /Textures/_ST14/Interface/Hub/Wallpapers/ship_1.png
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: 0, -356.5
+    size: 392.5, 317
+    pivot: 0.5, 0.5
+    curves:
+    - property: Alpha
+      keys: [0, 0, 0, 0.0784, 0.3922, 5, 0, 0, 0, 0.7843]
+    - property: PosY
+      keys: [0, 0, 0, -6.8959, -323.446, 5, 0, 0, 0, -357.9255]
+    - property: SizeY
+      keys: [0, 0, 0, 13.7918, 250.8915, 5, 0, 0, 0, 319.8505]
+    - property: PosX
+      keys: [0, 0, 0, 8.5383, -40.927, 5, 0, 0, 0, 1.7645]
+    - property: SizeX
+      keys: [0, 0, 0, 17.0766, 310.6465, 5, 0, 0, 0, 396.0295]
+  - id: ship2
+    texture: /Textures/_ST14/Interface/Hub/Wallpapers/ship_2.png
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: -208, -264
+    size: 299.5, 203.5
+    pivot: 0.5, 0.5
+    curves:
+    - property: Alpha
+      keys: [0, 0, 0, 0.0314, 0.3137, 5, 0, 0, 0, 0.4706]
+    - property: PosX
+      keys: [0, 0, 0, 7.5091, -243.5325, 5, 0, 0, 0, -205.9869]
+    - property: PosY
+      keys: [0, 0, 0, -5.1024, -239.856, 5, 0, 0, 0, -265.3678]
+    - property: SizeX
+      keys: [0, 0, 0, 15.0184, 228.434, 5, 0, 0, 0, 303.526]
+    - property: SizeY
+      keys: [0, 0, 0, 10.2047, 155.212, 5, 0, 0, 0, 206.2355]
+  - id: ship3
+    texture: /Textures/_ST14/Interface/Hub/Wallpapers/ship_3.png
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: 151.5, -190
+    size: 283, 281.5
+    pivot: 0.5, 0.5
+    curves:
+    - property: PosY
+      keys: [0, 0, 0, -7.9545, -150.6315, 5, 0, 0, 0, -190.4039]
+    - property: SizeY
+      keys: [0, 0, 0, 15.9089, 202.7635, 5, 0, 0, 0, 282.308]
+    - property: PosX
+      keys: [0, 0, 0, 7.9968, 111.922, 5, 0, 0, 0, 151.9061]
+    - property: SizeX
+      keys: [0, 0, 0, 15.9937, 203.8435, 5, 0, 0, 0, 283.812]
+    - property: Alpha
+      keys: [0, 0, 0, 0.0314, 0.0784, 5, 0, 0, 0, 0.2353]
+  - id: smoke
+    texture: /Textures/_ST14/Interface/Hub/Wallpapers/smoke.png
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: -521, -26.785
+    size: 1143.5, 1080
+    pivot: 0.5, 0.5
+    curves:
+    - property: PosX
+      keys: [0, 0, 0, 46.55, -621, 5, 0, 0, 0, -388.25]
+    - property: PosY
+      keys: [0, 0, 0, -38.431, -51.345, 5, 0, 0, 0, -243.5]
+  - id: bug2
+    rect: false
+    position: -278.2423, 47.9571
+    curves:
+    - property: PosX
+      keys: [0, 0, 0, 15.14, -355.2, 5, 0, 0, 0, -279.5]
+  - id: bug1_arm_head_3
+    parent: bug2
+    texture: /Textures/_ST14/Interface/Hub/Wallpapers/bug2_arm_big_front.png
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: -82, 87
+    size: 91, 274.5
+    pivot: 0.5, 0.5
+    curves:
+    - property: Rotation
+      keys: [0, 0, 0, 2.127, -0.104, 5, 0, 0, 0, 10.531]
+    - property: PosY
+      keys: [0, 0, 0, 2.6, -107, 5, 0, 0, 0, -94]
+    - property: PosX
+      keys: [0, 0, 0, -2.9, -280.5, 5, 0, 0, 0, -295]
+    - property: PivotY
+      keys: [0, 0, 0, 0, 0.0521]
+    - property: PivotX
+      keys: [0, 0, 0, 0, 0.8403]
+    - property: Rotation
+      keys: [0, 0, 0, -4.6528, 12.756, 5, 0, 0, 0, -10.508]
+    - property: PosY
+      keys: [0, 0, 0, 3.2, -37.5, 5, 0, 0, 0, -21.5]
+    - property: PosX
+      keys: [0, 0, 0, 1.2661, -112.3306, 5, 0, 0, 0, -106]
+    - property: PivotY
+      keys: [0, 0, 0, 0, 0.0548]
+    - property: PivotX
+      keys: [0, 0, 0, 0, 0.1667]
+  - id: bug1_arm_head_4
+    parent: bug2
+    texture: /Textures/_ST14/Interface/Hub/Wallpapers/bug2_arm_back.png
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: -248, 17
+    size: 311, 164.5
+    pivot: 0.5, 0.5
+    curves:
+    - property: Rotation
+      keys: [0, 0, 0, 0.6936, 0.238, 5, 0, 0, 0, 3.706]
+    - property: PosX
+      keys: [0, 0, 0, 0, -388.8232]
+    - property: PosY
+      keys: [0, 0, 0, 0, 87.5567]
+    - property: PivotX
+      keys: [0, 0, 0, 0, 0.0472]
+    - property: PivotY
+      keys: [0, 0, 0, 0, 0.9289]
+  - id: bug2_small_arm
+    parent: bug2
+    texture: /Textures/_ST14/Interface/Hub/Wallpapers/bug2_arm_small.png
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: -392.7577, 8.5429
+    size: 259, 186.5
+    pivot: 0.5, 0.5
+    curves:
+    - property: Rotation
+      keys: [0, 0, 0, -2.6134, -1.65, 5, 0, 0, 0, -14.717]
+    - property: PosX
+      keys: [0, 0, 0, 0, -478.1378]
+    - property: PivotX
+      keys: [0, 0, 0, 0, 0.1703]
+    - property: PosY
+      keys: [0, 0, 0, 0, 83.2995]
+    - property: PivotY
+      keys: [0, 0, 0, 0, 0.9008]
+  - id: bug2_body
+    parent: bug2
+    texture: /Textures/_ST14/Interface/Hub/Wallpapers/bug2_back_body.png
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: -282.2577, 129.5429
+    size: 826, 254
+    pivot: 0.5, 0.5
+  - id: bug1
+    rect: false
+    position: 458.8029, 200.7173
+    scale: 2.0398, 2.0398
+    curves:
+    - property: PosX
+      keys: [0, 0, 0, -7.24, 521.7, 5, 0, 0, 0, 485.5]
+  - id: bug1_arm_front
+    parent: bug1
+    texture: /Textures/_ST14/Interface/Hub/Wallpapers/bug1_front_arm_front.png
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: -306.0317, 8.8406
+    size: 180.5, 521.5
+    pivot: 0.5, 0.5
+    scale: 0.4903, 0.4903
+  - id: bug1_arm_back
+    parent: bug1
+    texture: /Textures/_ST14/Interface/Hub/Wallpapers/bug_1_front_arm_back.png
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: -204.0592, -40.6749
+    size: 367.5, 397
+    pivot: 0.5, 0.5
+    scale: 0.4903, 0.4903
+  - id: bug1_body
+    parent: bug1
+    texture: /Textures/_ST14/Interface/Hub/Wallpapers/bug1_body.png
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: -80.0253, -98.4022
+    size: 1188.5, 948
+    pivot: 0.4409, 0.5
+    scale: 0.4903, 0.4903
+  - id: bug1_arm_head
+    parent: bug1
+    texture: /Textures/_ST14/Interface/Hub/Wallpapers/bug1_head.png
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: -31.9805, -60.285
+    size: 846.5, 736
+    pivot: 0.5, 0.5
+    scale: 0.4903, 0.4903
+
+- type: st14HubScene
+  id: ST14HubSettingsPreferences
+  layers:
+  - id: tiled_bg
+    texture: /Textures/_ST14/Interface/Hub/Settings/side_extention.png
+    tile: true
+    anchorMin: 0, 0.5
+    anchorMax: 1, 0.5
+    position: 0, 0
+    size: 0, 1080
+    pivot: 0, 0.5
+  - id: background
+    texture: /Textures/_ST14/Interface/Hub/Settings/settings_preferences_bg.png
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: 0, 0
+    size: 1920, 1080
+    pivot: 0.5, 0.5
+  - id: bottom_fade
+    texture: /Textures/_ST14/Interface/Hub/Settings/mask_top.png
+    color: "#000000FF"
+    anchorMin: 0, 1
+    anchorMax: 1, 1
+    position: 0, 0
+    size: 0, 175
+    pivot: 0.5, 1
+  - id: scanlines
+    texture: /Textures/_ST14/Interface/Hub/Settings/scanlines.png
+    tile: true
+    color: "#00000062"
+    anchorMin: 0, 0
+    anchorMax: 1, 1
+    position: 0, 0
+    size: 0, 0
+    pivot: 0.5, 0.5
+  - id: golden_text
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: -221, -361
+    size: 822.4957, 333.6435
+    pivot: 0.5, 0.5
+    rotation: 6.81
+    text:
+      loc: st14-hub-settings-slogan-preferences
+      size: 54
+
+- type: st14HubScene
+  id: ST14HubSettingsControls
+  layers:
+  - id: background_3
+    texture: /Textures/_ST14/Interface/Hub/Settings/settings_controls.png
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: 0, 0
+    size: 1920, 1080
+    pivot: 0.5, 0.5
+  - id: soldier
+    texture: /Textures/_ST14/Interface/Hub/Settings/settings_controls_soldiers.png
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: -615.6631, 83.3269
+    size: 444.6332, 946.6387
+    pivot: 0.5, 0.5
+    wiggle:
+      amplitude: 5, 5
+      frequency: 0.3, 0.4
+      rotation: 10
+      rotationFrequency: 0.1
+  - id: scanlines
+    texture: /Textures/_ST14/Interface/Hub/Settings/scanlines.png
+    tile: true
+    color: "#00000062"
+    anchorMin: 0, 0
+    anchorMax: 1, 1
+    position: 0, 0
+    size: 0, 0
+    pivot: 0.5, 0.5
+  - id: golden_text
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: -27.0691, -434.2756
+    size: 1842.3459, 135.535
+    pivot: 0.5, 0.5
+    rotation: 1.73
+    text:
+      loc: st14-hub-settings-slogan-controls
+      size: 64
+  - id: bottom_fade
+    texture: /Textures/_ST14/Interface/Hub/Settings/mask_top.png
+    color: "#000000FF"
+    anchorMin: 0, 1
+    anchorMax: 1, 1
+    position: 0, 0
+    size: 0, 175
+    pivot: 0.5, 1
+
+- type: st14HubScene
+  id: ST14HubSettingsGraphics
+  layers:
+  - id: tiled_bg
+    texture: /Textures/_ST14/Interface/Hub/Settings/settings_graphics_bg_tiled.png
+    tile: true
+    anchorMin: 0, 0.5
+    anchorMax: 1, 0.5
+    position: 0, 0
+    size: 0, 1080
+    pivot: 1, 0.5
+  - id: background_right
+    solid: true
+    color: "#000000FF"
+    anchorMin: 0, 0.5
+    anchorMax: 1, 0.5
+    position: 959.9995, 0
+    size: -1920, 1080
+    pivot: 0.5, 0.5
+  - id: tiled_bg_1
+    texture: /Textures/_ST14/Interface/Hub/Settings/settings_graphics_bg_tiled.png
+    tile: true
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: 0, 0
+    size: 1920, 1080
+    pivot: 0.5, 0.5
+  - id: background
+    texture: /Textures/_ST14/Interface/Hub/Settings/settings_graphics_bg.png
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: -471.5, 0
+    size: 2093.4282, 1080
+    pivot: 0.5, 0.5
+  - id: bottom_fade
+    texture: /Textures/_ST14/Interface/Hub/Settings/mask_top.png
+    color: "#000000FF"
+    anchorMin: 0, 1
+    anchorMax: 1, 1
+    position: 0, 0
+    size: 0, 175
+    pivot: 0.5, 1
+  - id: bug
+    texture: /Textures/_ST14/Interface/Hub/Settings/bug.png
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: 287.5, 24.5
+    size: 904.9233, 904.9233
+    pivot: 0.5, 0.5
+  - id: scope
+    texture: /Textures/_ST14/Interface/Hub/Settings/scope.png
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: 354, 0
+    size: 1682.1475, 1080
+    pivot: 0.5, 0.5
+    scale: 1.1, 1.1
+    wiggle:
+      amplitude: 25, 25
+      frequency: 0.1, 0.1
+      rotation: 5
+      rotationFrequency: 0.3
+  - id: scanlines
+    texture: /Textures/_ST14/Interface/Hub/Settings/scanlines.png
+    tile: true
+    color: "#00000062"
+    anchorMin: 0, 0
+    anchorMax: 1, 1
+    position: 0, 0
+    size: 0, 0
+    pivot: 0.5, 0.5
+  - id: golden_text
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: 367.5, -8.5
+    size: 1094.1746, 673.124
+    pivot: 0.5, 0.5
+    rotation: -12.31
+    scale: 1, 1.18
+    text:
+      loc: st14-hub-settings-slogan-graphics
+      size: 72
+
+- type: st14HubScene
+  id: ST14HubSettingsAudio
+  layers:
+  - id: tiled_bg
+    texture: /Textures/_ST14/Interface/Hub/Settings/audio_bg_tileable.png
+    tile: true
+    anchorMin: 0, 0.5
+    anchorMax: 1, 0.5
+    position: 0, 0
+    size: 0, 1080
+    pivot: 0, 0.5
+  - id: background
+    texture: /Textures/_ST14/Interface/Hub/Settings/settings_menu_audio.png
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: 302, 37
+    size: 2404.324, 1080
+    pivot: 0.5, 0.5
+  - id: scream
+    texture: /Textures/_ST14/Interface/Hub/Settings/bug_scream.png
+    color: "#FFEFBDFF"
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: -208.5, 19
+    size: 291.9188, 205.2419
+    pivot: 0.5, 0.5
+    rotation: 7.29
+    wiggle:
+      amplitude: 25, 25
+      frequency: 0.3, 0.3
+      rotation: 5
+      rotationFrequency: 0
+  - id: bottom_fade
+    texture: /Textures/_ST14/Interface/Hub/Settings/mask_top.png
+    color: "#000000FF"
+    anchorMin: 0, 1
+    anchorMax: 1, 1
+    position: 0, 0
+    size: 0, 175
+    pivot: 0.5, 1
+  - id: bug
+    texture: /Textures/_ST14/Interface/Hub/Settings/bug_2.png
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: -581, 9.5
+    size: 2526.5837, 1234.9171
+    pivot: 0.5, 0.5
+    scale: 0.8178, 0.8608
+    wiggle:
+      amplitude: 10, 5
+      frequency: 0.3, 0.4
+      rotation: 5
+      rotationFrequency: 0.1
+  - id: scanlines
+    texture: /Textures/_ST14/Interface/Hub/Settings/scanlines.png
+    tile: true
+    color: "#00000062"
+    anchorMin: 0, 0
+    anchorMax: 1, 1
+    position: 0, 0
+    size: 0, 0
+    pivot: 0.5, 0.5
+  - id: golden_text
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: 409.5, -330.5701
+    size: 969.96, 418.8595
+    pivot: 0.5, 0.5
+    rotation: -7.76
+    text:
+      loc: st14-hub-settings-slogan-audio
+      size: 68

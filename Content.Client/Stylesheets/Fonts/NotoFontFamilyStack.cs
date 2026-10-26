@@ -15,6 +15,17 @@ namespace Content.Client.Stylesheets.Fonts;
 [PublicAPI]
 public sealed class NotoFontFamilyStack(IResourceCache resCache, string variant = "")
 {
+    // ST14-start
+    /// <summary>
+    ///     Uses another primary font family with the Noto symbol fonts as fallback, the path takes the same substitutions.
+    /// </summary>
+    public NotoFontFamilyStack(IResourceCache resCache, string primary, HashSet<FontKind> kinds) : this(resCache)
+    {
+        _fontPrimary = primary;
+        AvailableKinds = kinds;
+    }
+    // ST14-end
+
     /// <summary>
     ///     The primary font path, with string substitution markers.
     /// </summary>

@@ -1,0 +1,7 @@
+# Lobby playlist made of Starship Troopers: Terran Command music, used instead of the stock SS14 lobby songs
+- type: soundCollection
+  id: ST14LobbyMusic
+  files:
+    - /Audio/_ST14/Music/Lobby/main_theme.ogg
+    - /Audio/_ST14/Music/Lobby/deployment.ogg
+    - /Audio/_ST14/Music/Lobby/anthem.ogg

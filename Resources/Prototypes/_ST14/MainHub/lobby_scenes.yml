@@ -1,0 +1,437 @@
+# Backgrounds of the lobby and the character editor, put together from the art of Starship Troopers: Terran Command.
+# 1920x1080 canvas, y down. Layers only drift and breathe very slowly, nothing shakes or turns.
+
+- type: st14HubScene
+  id: ST14LobbyOrbit
+  layers:
+  - id: space
+    texture: /Textures/_ST14/Interface/Lobby/Backgrounds/space.png
+    anchorMin: 0, 0
+    anchorMax: 1, 1
+    position: 0, 0
+    size: 0, 0
+    pivot: 0.5, 0.5
+  - id: stars
+    texture: /Textures/_ST14/Interface/Lobby/Backgrounds/stars.png
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: 0, 0
+    size: 2100, 1181
+    pivot: 0.5, 0.5
+    drift:
+      offset: 8, 4
+      offsetPeriod: 90
+  - id: galaxy
+    texture: /Textures/_ST14/Interface/Lobby/Backgrounds/galaxy.png
+    color: "#FFFFFFA0"
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: -420, -260
+    size: 1000, 796
+    pivot: 0.5, 0.5
+    drift:
+      breathe: 0.02
+      breathePeriod: 30
+      offset: 6, 3
+      offsetPeriod: 50
+  - id: nebula
+    texture: /Textures/_ST14/Interface/Lobby/Backgrounds/nebula.png
+    color: "#FFFFFF90"
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: 0, -140
+    size: 2400, 593
+    pivot: 0.5, 0.5
+    drift:
+      breathe: 0.015
+      breathePeriod: 28
+      offset: 20, 4
+      offsetPeriod: 60
+      phase: 0.3
+  - id: planet
+    texture: /Textures/_ST14/Interface/Lobby/Backgrounds/planet.png
+    anchorMin: 1, 1
+    anchorMax: 1, 1
+    position: -300, -110
+    size: 1100, 1100
+    pivot: 0.5, 0.5
+    drift:
+      breathe: 0.006
+      breathePeriod: 40
+  - id: station
+    texture: /Textures/_ST14/Interface/Lobby/Backgrounds/station.png
+    color: "#D8D8D8FF"
+    anchorMin: 0, 0
+    anchorMax: 0, 0
+    position: 1080, 170
+    size: 170, 212
+    pivot: 0.5, 0.5
+    drift:
+      offset: 0, 10
+      offsetPeriod: 50
+      phase: 0.2
+  - id: cruiser
+    texture: /Textures/_ST14/Interface/Lobby/Backgrounds/cruiser.png
+    color: "#A8A8A8FF"
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: -60, -330
+    size: 400, 194
+    pivot: 0.5, 0.5
+    drift:
+      offset: 40, -6
+      offsetPeriod: 120
+      phase: 0.6
+  - id: ship_big
+    texture: /Textures/_ST14/Interface/Lobby/Backgrounds/ship_big.png
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: 0, 110
+    size: 560, 404
+    pivot: 0.5, 0.5
+    drift:
+      breathe: 0.01
+      breathePeriod: 50
+      offset: 30, -12
+      offsetPeriod: 80
+  - id: dropships
+    texture: /Textures/_ST14/Interface/Lobby/Backgrounds/dropships.png
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: 200, -150
+    size: 280, 162
+    pivot: 0.5, 0.5
+    drift:
+      offset: -50, 10
+      offsetPeriod: 45
+      phase: 0.45
+
+- type: st14HubScene
+  id: ST14LobbyHeadquarters
+  layers:
+  - id: background
+    texture: /Textures/_ST14/Interface/Lobby/Backgrounds/hq_background.png
+    anchorMin: 0, 0
+    anchorMax: 1, 1
+    position: 0, 0
+    size: 0, 0
+    pivot: 0.5, 0.5
+  - id: galaxy
+    texture: /Textures/_ST14/Interface/Lobby/Backgrounds/galaxy.png
+    color: "#FFFFFF50"
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: 0, 0
+    size: 1600, 1274
+    pivot: 0.5, 0.5
+    drift:
+      breathe: 0.02
+      breathePeriod: 35
+  - id: logo
+    texture: /Textures/_ST14/Interface/Lobby/Backgrounds/mi_logo.png
+    color: "#D4C48A30"
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: 0, -40
+    size: 1300, 248
+    pivot: 0.5, 0.5
+    drift:
+      breathe: 0.015
+      breathePeriod: 20
+  - id: trooper
+    texture: /Textures/_ST14/Interface/Lobby/Backgrounds/trooper.png
+    color: "#FFFFFF50"
+    anchorMin: 0, 1
+    anchorMax: 0, 1
+    position: 260, 0
+    size: 700, 719
+    pivot: 0.5, 1
+    drift:
+      offset: 8, 0
+      offsetPeriod: 60
+  - id: soldier
+    texture: /Textures/_ST14/Interface/Lobby/Backgrounds/soldier.png
+    color: "#FFFFFF50"
+    anchorMin: 1, 1
+    anchorMax: 1, 1
+    position: -260, 0
+    size: 560, 893
+    pivot: 0.5, 1
+    drift:
+      offset: -8, 0
+      offsetPeriod: 70
+      phase: 0.5
+
+# Bug lobby: a horde of warrior bugs runs across a burning desert. Bugs only run straight and bob a little, nothing sways.
+- type: st14HubScene
+  id: ST14LobbyHorde
+  layers:
+  - id: sky
+    texture: /Textures/_ST14/Interface/Lobby/Backgrounds/bug_sky.png
+    color: "#E2A27EFF"
+    anchorMin: 0, 0
+    anchorMax: 1, 1
+    position: 0, 0
+    size: 0, 0
+    pivot: 0.5, 0.5
+    drift:
+      breathe: 0.01
+      breathePeriod: 40
+  - id: planet
+    texture: /Textures/_ST14/Interface/Lobby/Backgrounds/lava_planet.png
+    color: "#FFFFFFD0"
+    anchorMin: 0.5, 0
+    anchorMax: 0.5, 0
+    position: 180, 210
+    size: 260, 260
+    pivot: 0.5, 0.5
+    drift:
+      breathe: 0.01
+      breathePeriod: 30
+  - id: dust_back
+    texture: /Textures/_ST14/Interface/Lobby/Backgrounds/bug_dust.png
+    color: "#E8B48C90"
+    anchorMin: 0, 1
+    anchorMax: 1, 1
+    position: 0, -120
+    size: 400, 420
+    pivot: 0.5, 1
+    drift:
+      offset: 40, 0
+      offsetPeriod: 26
+      breathe: 0.02
+      breathePeriod: 18
+  - id: ground
+    texture: /Textures/_ST14/Interface/Lobby/Backgrounds/bug_ground.png
+    color: "#C9946EFF"
+    anchorMin: 0, 1
+    anchorMax: 1, 1
+    position: 0, 0
+    size: 0, 460
+    pivot: 0.5, 1
+  - id: bug_0
+    texture: /Textures/_ST14/Interface/Lobby/Backgrounds/bug_runner.png
+    color: "#D2A48ACC"
+    anchorMin: 0.5, 1
+    anchorMax: 0.5, 1
+    position: 0, -250
+    size: 150, 67
+    pivot: 0.5, 1
+    drift:
+      run: 210, 0
+      runPeriod: 12.4
+      offset: 0, 3
+      offsetPeriod: 0.45
+      phase: 0.0
+  - id: bug_1
+    texture: /Textures/_ST14/Interface/Lobby/Backgrounds/bug_runner.png
+    color: "#D2A48ACC"
+    anchorMin: 0.5, 1
+    anchorMax: 0.5, 1
+    position: 0, -238
+    size: 130, 58
+    pivot: 0.5, 1
+    drift:
+      run: 220, 0
+      runPeriod: 11.8
+      offset: 0, 3
+      offsetPeriod: 0.55
+      phase: 0.37
+  - id: bug_2
+    texture: /Textures/_ST14/Interface/Lobby/Backgrounds/bug_runner.png
+    color: "#D2A48ACC"
+    anchorMin: 0.5, 1
+    anchorMax: 0.5, 1
+    position: 0, -262
+    size: 170, 76
+    pivot: 0.5, 1
+    drift:
+      run: 200, 0
+      runPeriod: 13.0
+      offset: 0, 3
+      offsetPeriod: 0.65
+      phase: 0.71
+  - id: bug_3
+    texture: /Textures/_ST14/Interface/Lobby/Backgrounds/bug_runner.png
+    color: "#D2A48ACC"
+    anchorMin: 0.5, 1
+    anchorMax: 0.5, 1
+    position: 0, -232
+    size: 120, 54
+    pivot: 0.5, 1
+    drift:
+      run: 215, 0
+      runPeriod: 12.1
+      offset: 0, 3
+      offsetPeriod: 0.45
+      phase: 0.18
+  - id: bug_4
+    texture: /Textures/_ST14/Interface/Lobby/Backgrounds/bug_runner.png
+    color: "#D2A48ACC"
+    anchorMin: 0.5, 1
+    anchorMax: 0.5, 1
+    position: 0, -255
+    size: 160, 71
+    pivot: 0.5, 1
+    drift:
+      run: 205, 0
+      runPeriod: 12.7
+      offset: 0, 3
+      offsetPeriod: 0.55
+      phase: 0.55
+  - id: bug_5
+    texture: /Textures/_ST14/Interface/Lobby/Backgrounds/bug_runner.png
+    color: "#FFFFFFFF"
+    anchorMin: 0.5, 1
+    anchorMax: 0.5, 1
+    position: 0, -150
+    size: 420, 187
+    pivot: 0.5, 1
+    drift:
+      run: 300, 0
+      runPeriod: 9.0
+      offset: 0, 6
+      offsetPeriod: 0.65
+      phase: 0.1
+  - id: bug_6
+    texture: /Textures/_ST14/Interface/Lobby/Backgrounds/bug_runner.png
+    color: "#FFFFFFFF"
+    anchorMin: 0.5, 1
+    anchorMax: 0.5, 1
+    position: 0, -120
+    size: 480, 214
+    pivot: 0.5, 1
+    drift:
+      run: 320, 0
+      runPeriod: 8.6
+      offset: 0, 6
+      offsetPeriod: 0.45
+      phase: 0.48
+  - id: bug_7
+    texture: /Textures/_ST14/Interface/Lobby/Backgrounds/bug_runner.png
+    color: "#FFFFFFFF"
+    anchorMin: 0.5, 1
+    anchorMax: 0.5, 1
+    position: 0, -170
+    size: 380, 169
+    pivot: 0.5, 1
+    drift:
+      run: 290, 0
+      runPeriod: 9.4
+      offset: 0, 6
+      offsetPeriod: 0.55
+      phase: 0.78
+  - id: bug_8
+    texture: /Textures/_ST14/Interface/Lobby/Backgrounds/bug_runner.png
+    color: "#FFFFFFFF"
+    anchorMin: 0.5, 1
+    anchorMax: 0.5, 1
+    position: 0, -90
+    size: 560, 250
+    pivot: 0.5, 1
+    drift:
+      run: 340, 0
+      runPeriod: 8.2
+      offset: 0, 6
+      offsetPeriod: 0.65
+      phase: 0.3
+  - id: bug_9
+    texture: /Textures/_ST14/Interface/Lobby/Backgrounds/bug_runner.png
+    color: "#FFFFFFFF"
+    anchorMin: 0.5, 1
+    anchorMax: 0.5, 1
+    position: 0, -60
+    size: 640, 285
+    pivot: 0.5, 1
+    drift:
+      run: 360, 0
+      runPeriod: 7.8
+      offset: 0, 6
+      offsetPeriod: 0.45
+      phase: 0.63
+  - id: dust_front
+    texture: /Textures/_ST14/Interface/Lobby/Backgrounds/bug_dust.png
+    color: "#E8B48C70"
+    anchorMin: 0, 1
+    anchorMax: 1, 1
+    position: 0, 40
+    size: 600, 360
+    pivot: 0.5, 1
+    drift:
+      offset: -50, 0
+      offsetPeriod: 22
+      breathe: 0.025
+      breathePeriod: 16
+      phase: 0.4
+
+# Support screen: deep space with a warm nebula, Klendathu low on the left and the Mobile Infantry emblem large and dim
+# behind the panels. Only slow drift and breathing.
+- type: st14HubScene
+  id: ST14SupportBackground
+  layers:
+  - id: space
+    texture: /Textures/_ST14/Interface/Lobby/Backgrounds/space.png
+    anchorMin: 0, 0
+    anchorMax: 1, 1
+    position: 0, 0
+    size: 0, 0
+    pivot: 0.5, 0.5
+  - id: stars
+    texture: /Textures/_ST14/Interface/Lobby/Backgrounds/stars.png
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: 0, 0
+    size: 2100, 1181
+    pivot: 0.5, 0.5
+    drift:
+      offset: 8, 4
+      offsetPeriod: 90
+  - id: galaxy
+    texture: /Textures/_ST14/Interface/Lobby/Backgrounds/galaxy.png
+    color: "#FFC89070"
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: 380, -120
+    size: 1500, 1195
+    pivot: 0.5, 0.5
+    drift:
+      breathe: 0.02
+      breathePeriod: 32
+      offset: 10, 4
+      offsetPeriod: 60
+  - id: nebula
+    texture: /Textures/_ST14/Interface/Lobby/Backgrounds/nebula.png
+    color: "#E8B48C60"
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: 0, 220
+    size: 2600, 642
+    pivot: 0.5, 0.5
+    drift:
+      breathe: 0.015
+      breathePeriod: 28
+      offset: 24, 0
+      offsetPeriod: 70
+      phase: 0.3
+  - id: planet
+    texture: /Textures/_ST14/Interface/Lobby/Backgrounds/planet.png
+    color: "#B0B0B0FF"
+    anchorMin: 0, 1
+    anchorMax: 0, 1
+    position: 120, 160
+    size: 900, 900
+    pivot: 0.5, 0.5
+    drift:
+      breathe: 0.006
+      breathePeriod: 45
+  - id: emblem
+    texture: /Textures/_ST14/Interface/Lobby/Backgrounds/mi_logo.png
+    color: "#D4C48A22"
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: 0, 40
+    size: 1700, 325
+    pivot: 0.5, 0.5
+    drift:
+      breathe: 0.012
+      breathePeriod: 24

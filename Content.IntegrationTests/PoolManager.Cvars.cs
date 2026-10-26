@@ -1,4 +1,5 @@
 #nullable enable
+using Content.Shared._ST14.CCVar; // ST14
 using Content.Shared.CCVar;
 
 namespace Content.IntegrationTests;
@@ -35,5 +36,6 @@ public static partial class PoolManager
         (CCVars.InteractionRateLimitPeriod.Name, "0.1"),
         (CCVars.MovementMobPushing.Name, "false"),
         (CCVars.ResourceUploadingStoreDeletionDays.Name, "0"),
+        (ST14CVars.HubOnConnect.Name, "false"), // ST14: tests expect the stock lobby right after connecting
     };
 }

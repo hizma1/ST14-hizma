@@ -1,0 +1,14 @@
+- files: ["soft_glow.png", "pedestal.png"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Made for Starborne Troopers"
+  source: "https://github.com/Denlero/Starborne-Troopers-SS14"
+
+- files: ["statuette.png", "statuette.half.png"]
+  license: "Custom"
+  copyright: "Starship Troopers: Terran Command, © The Artistocrats / Slitherine / Sony Pictures. Used with permission. Recoloured for Starborne Troopers."
+  source: "https://store.steampowered.com/app/1202130/"
+
+- files: ["morita_preview.png"]
+  license: "Custom"
+  copyright: "All rights reserved. Made by PatoGrone, scaled up from the Morita rifle icon of Starborne Troopers"
+  source: "https://github.com/Denlero/Starborne-Troopers-SS14"

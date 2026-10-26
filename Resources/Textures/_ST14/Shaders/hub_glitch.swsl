@@ -1,0 +1,88 @@
+// Wallpaper switch glitch of the main hub, ported from Hidden/GlitchImageEffect of Starship Troopers: Terran Command.
+// The original camera runs two passes: mode 3 (flashing bands of value noise), then mode 2 (blocks dragged sideways with an RGB smear).
+// Constants are the ones set on the original camera, amount is ramped by the transition.
+
+uniform highp float amount;
+uniform highp vec2 screenSize;
+
+// mode 3
+const highp float BandRows = 2.99;
+const highp float BandSpeed = 0.684;
+const highp float BandThreshold = 0.3;
+
+// mode 2, strength is 240 * 0.01 in the original
+const highp float SmearStrength = 2.4;
+
+highp float hash2(highp vec2 v) {
+    return fract(sin(dot(v, vec2(12.9898, 78.233))) * 43758.5453);
+}
+
+highp float hash1(highp float v) {
+    return fract(sin(v) * 43758.5453);
+}
+
+highp float valueNoise(highp float x, highp float offset) {
+    highp float i = floor(x + offset);
+    highp float f = fract(x);
+    f = f * f * (3.0 - 2.0 * f);
+    return mix(hash1(i + 170.0), hash1(i + 171.0), f);
+}
+
+highp vec4 bands(highp vec2 uv) {
+    highp vec2 px = uv * screenSize;
+    highp float cell = screenSize.y / BandRows;
+    highp vec2 snapped = floor(px / cell) * cell;
+
+    highp vec3 p = snapped.y * vec3(0.01, 0.011, 0.51) + TIME * BandSpeed;
+    highp float n = valueNoise(p.x, 0.0) * valueNoise(p.y, 1000.0) * valueNoise(p.z, 421.0);
+
+    highp float tx = TIME * 0.01 + snapped.x;
+    highp vec4 r = fract(vec4(snapped.y, tx, tx, snapped.y) * vec4(470.782715, 491.187103, 443.897491, 397.297302));
+    highp float d = dot(r, r.zwyx + 19.19);
+    highp float rnd = fract((d + r.z) * (d + r.w)) + 0.3;
+
+    highp float v = n * rnd;
+    v = v < BandThreshold ? 0.0 : v * amount;
+    return vec4(0.3, 0.3, 0.3, 1.0) * v * v;
+}
+
+highp vec4 frame(highp vec2 uv) {
+    return texture2D(TEXTURE, uv) + bands(uv);
+}
+
+void fragment() {
+    highp vec4 original = frame(UV);
+
+    highp float t = fract(TIME / 32.0);
+    highp float strength = clamp(SmearStrength, 0.0, 1.0);
+
+    highp float h1 = hash2(vec2(floor(t * 192.0) / 6.0));
+    highp float count = min((1.0 - strength) * 0.7 + h1, 1.0) * 10.0;
+    highp vec2 block = floor(UV * count) / count;
+
+    highp float h2 = hash2(vec2(block.x, t * 32.0));
+    highp float v = h2 - strength * 0.5 + 0.5;
+    highp float rows = v < 1.0 ? (1.0 - v) * 40.0 : 0.000005;
+    highp float row = floor(UV.y * rows) / rows;
+
+    highp float rowRand = hash2(vec2(row, t * 32.0));
+    highp float blockRand = 0.9 - min(hash2(vec2(block.y, t * 32.0)) + 0.8, 1.0);
+    highp float jitter = hash2(UV + t * 32.0);
+
+    highp float drag = SmearStrength * rowRand * 0.05 * (h1 > 0.5 ? 1.0 : -1.0);
+    highp float shift = jitter * drag * 0.5 + drag;
+
+    highp vec2 pos = vec2(UV.x, UV.y + SmearStrength * blockRand * 0.1);
+    highp vec4 sum = vec4(0.0);
+    for (int i = 0; i < 10; i++) {
+        highp float fi = float(i);
+        pos.x = clamp(pos.x + shift * fi * 0.1, 0.0, 1.0);
+        highp vec4 c = frame(pos);
+        highp float w = fi * 0.3 - 1.5;
+        c.rgb *= clamp(vec3(-w, 1.0 - abs(w), w), 0.0, 1.0);
+        sum += c;
+    }
+
+    highp vec4 smeared = vec4(sum.rgb * vec3(0.263158, 0.294118, 0.357143), sum.a) * amount;
+    COLOR = smeared + original * (1.0 - amount);
+}

@@ -1,5 +1,5 @@
-defaultWindowTitle: Starship Troopers 14
+defaultWindowTitle: Starborne Troopers
 windowIconSet: /Textures/Logo/icon
-splashLogo: /Textures/Logo/logo.png
+splashLogo: /Textures/_ST14/Interface/Hub/UI/splash.png # ST14: Terran Command style loading screen
 
 # PJB PLEASE

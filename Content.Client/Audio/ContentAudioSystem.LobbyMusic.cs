@@ -1,4 +1,5 @@
 using System.Linq;
+using Content.Client._ST14.MainHub; // ST14
 using Content.Client.GameTicking;
 using Content.Client.GameTicking.Managers;
 using Content.Client.Lobby;
@@ -164,6 +165,11 @@ public sealed partial class ContentAudioSystem
             return;
 
         _lobbyPlaylist = playlist;
+
+        // ST14: the hub has its own theme, the playlist starts when the player gets to the lobby
+        if (_state.CurrentState is ST14HubState)
+            return;
+
         if (_lobbyPlaylist.Length == 0)
         {
             return;
@@ -216,6 +222,9 @@ public sealed partial class ContentAudioSystem
     private void PlayRestartSound(RoundRestartCleanupEvent ev)
     {
         if (!_configManager.GetCVar(CCVars.RestartSoundsEnabled))
+            return;
+
+        if (_state.CurrentState is ST14HubState) // ST14
             return;
 
         var file = _gameTicker.RestartSound;

@@ -1,0 +1,96 @@
+# Backgrounds of the "To battle!" screens: mode selection and the galaxy map.
+# Layout is taken from GameModeSelectionMenu and TerritoryMissionScreen of Starship Troopers: Terran Command,
+# converted to a 1920x1080 canvas with y pointing down. Planets and cards are drawn by ST14WarScreens.cs on top.
+# The original shakes the stars and nebulae with its Wiggle script, here they only breathe and slide very slowly.
+
+- type: st14HubScene
+  id: ST14HubModes
+  layers:
+  - id: space
+    texture: /Textures/_ST14/Interface/Hub/War/modes_background.png
+    anchorMin: 0, 0
+    anchorMax: 1, 1
+    position: 0, 0
+    size: 0, 0
+    pivot: 0.5, 0.5
+  - id: stars
+    texture: /Textures/_ST14/Interface/Hub/War/stars.png
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: 0, 0
+    size: 2271, 1277.68
+    pivot: 0.5, 0.5
+    drift:
+      offset: 6, 3
+      offsetPeriod: 60
+
+- type: st14HubScene
+  id: ST14HubGalaxy
+  layers:
+  - id: background
+    texture: /Textures/_ST14/Interface/Hub/War/galaxy_background.png
+    anchorMin: 0, 0
+    anchorMax: 1, 1
+    position: 0, 0
+    size: 0, 0
+    pivot: 0.5, 0.5
+  - id: galaxy_1
+    texture: /Textures/_ST14/Interface/Hub/War/galaxy_1.png
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: 537.5, 112.5
+    size: 978.75, 486
+    pivot: 0.5, 0.5
+    drift:
+      breathe: 0.018
+      breathePeriod: 26
+      offset: 8, 3
+      offsetPeriod: 44
+      phase: 0.0
+  - id: galaxy_2
+    texture: /Textures/_ST14/Interface/Hub/War/galaxy_2.png
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: 153, -66
+    size: 1239.75, 615.6
+    pivot: 0.5, 0.5
+    drift:
+      breathe: 0.015
+      breathePeriod: 30
+      offset: -6, 4
+      offsetPeriod: 52
+      phase: 0.35
+  - id: galaxy_3
+    texture: /Textures/_ST14/Interface/Hub/War/galaxy_3.png
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: -553.5, -131.5
+    size: 978.75, 486
+    pivot: 0.5, 0.5
+    drift:
+      breathe: 0.02
+      breathePeriod: 24
+      offset: 7, -3
+      offsetPeriod: 40
+      phase: 0.6
+  - id: galaxy_4
+    texture: /Textures/_ST14/Interface/Hub/War/galaxy_4.png
+    anchorMin: 0.5, 0.5
+    anchorMax: 0.5, 0.5
+    position: -417, 245
+    size: 1261.5, 626.4
+    pivot: 0.5, 0.5
+    drift:
+      breathe: 0.016
+      breathePeriod: 28
+      offset: -8, -2
+      offsetPeriod: 48
+      phase: 0.8
+  - id: sun
+    texture: /Textures/_ST14/Interface/Hub/War/sun.png
+    color: "#FFE6D1FF"
+    anchorMin: 0.5, 0
+    anchorMax: 0.5, 0
+    position: 0, 0
+    size: 391.5, 330
+    pivot: 0.5, 0.55
