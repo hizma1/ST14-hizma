@@ -13,7 +13,7 @@ public static partial class ST14CVars
         CVarDef.Create("st14.language", "", CVar.ARCHIVE);
 
     public static readonly CVarDef<string> ServerLanguage =
-        CVarDef.Create("st14.server_language", "", CVar.ARCHIVE);
+        CVarDef.Create("st14.server_language", "", CVar.SERVER | CVar.REPLICATED | CVar.ARCHIVE);
 
     /// <summary>
     /// Main menu backgrounds: supersampled rendering and a smoothed animation clock. Off draws them straight to the screen
@@ -59,4 +59,11 @@ public static partial class ST14CVars
     /// </summary>
     public static readonly CVarDef<bool> HubOnConnect =
         CVarDef.Create("st14.hub_on_connect", true, CVar.CLIENTONLY);
+
+    /// <summary>
+    /// War planet of the galaxy map the current rounds are fought on, the deaths of the round count in its target sector.
+    /// Empty uses the only war planet when there is exactly one
+    /// </summary>
+    public static readonly CVarDef<string> WarPlanet =
+        CVarDef.Create("st14.war_planet", string.Empty, CVar.SERVERONLY | CVar.ARCHIVE);
 }

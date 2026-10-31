@@ -1,3 +1,4 @@
+using System.Collections.Concurrent;
 using System.Numerics;
 using System.Linq;
 using Robust.Client.Graphics;
@@ -49,11 +50,13 @@ public static class ST14HubStyle
         [ST14HubFont.Black] = new[] { "/Fonts/_ST14/Orbitron/Orbitron-Black.ttf", "/Fonts/_ST14/Exo2/Exo2-Black.ttf", "/Fonts/NotoSansDisplay/NotoSansDisplay-Bold.ttf" },
     };
 
-    private static readonly Dictionary<(ST14HubFont, int), Font> FontCache = new();
+    // Keyed by the resource cache too: integration tests run several clients in one process at the same time,
+    // and a font belongs to the client that loaded it. ConcurrentDictionary because they do it on parallel threads.
+    private static readonly ConcurrentDictionary<(IResourceCache, ST14HubFont, int), Font> FontCache = new();
 
     public static Font Font(IResourceCache cache, ST14HubFont font, int size)
     {
-        if (FontCache.TryGetValue((font, size), out var cached))
+        if (FontCache.TryGetValue((cache, font, size), out var cached))
             return cached;
 
         var fonts = FontStacks[font]
@@ -62,8 +65,7 @@ public static class ST14HubStyle
             .ToArray();
 
         var result = fonts.Length == 1 ? fonts[0] : new StackedFont(fonts);
-        FontCache[(font, size)] = result;
-        return result;
+        return FontCache.GetOrAdd((cache, font, size), result);
     }
 
     public static Texture Tex(IResourceCache cache, string file)
